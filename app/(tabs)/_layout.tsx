@@ -1,55 +1,141 @@
-import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { Link, Tabs } from 'expo-router';
-import { Pressable, useColorScheme } from 'react-native';
+import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
+import {Octicons} from "@expo/vector-icons";
+import {Drawer} from "expo-router/drawer";
+import React, {useEffect} from "react";
+import {StatusBar, View, StyleSheet, TouchableOpacity} from "react-native";
+import * as SplashScreen from "expo-splash-screen";
+import {useFonts} from "expo-font";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import {useSnapshot} from "valtio";
+import {useNavigation} from "expo-router/src/useNavigation";
 
-import Colors from '../../constants/Colors';
+import Colors from "../constants/Colors";
+import CustomDrawer from "../components/CustomDrawer";
+import data from "../data.json";
+import {selected} from "../globalState";
+import {DrawerActions} from "@react-navigation/native";
 
 /**
  * You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
  */
-function TabBarIcon(props: {
-  name: React.ComponentProps<typeof FontAwesome>['name'];
-  color: string;
-}) {
-  return <FontAwesome size={28} style={{ marginBottom: -3 }} {...props} />;
-}
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
+  StatusBar.setBackgroundColor(Colors.mint);
+  const snap: any = useSnapshot(selected);
+  const titleTexts = data[snap.lang];
+
+  const navigation = useNavigation();
+
+  const retrieveLanguage = async () => {
+    try {
+      const storedLanguage = await AsyncStorage.getItem("language");
+      if (storedLanguage !== null) {
+        selected.lang = storedLanguage;
+      } else {
+        selected.lang = "0";
+      }
+    } catch (error) {
+      alert(error);
+    }
+  };
+  useEffect(() => {
+    retrieveLanguage();
+  }, []);
+
+  // fonts
+  const [fontsLoaded] = useFonts({
+    "Quick sand": require("../assets/fonts/Quicksand.ttf"),
+  });
+
+  useEffect(() => {
+    async function prepare() {
+      await SplashScreen.preventAutoHideAsync();
+    }
+    prepare();
+  }, []);
+
+  if (!fontsLoaded) {
+    return undefined;
+  } else {
+    SplashScreen.hideAsync();
+  }
 
   return (
-    <Tabs
+    <Drawer
+      drawerContent={(props) => <CustomDrawer {...props} />}
+      initialRouteName="card"
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-      }}>
-      <Tabs.Screen
-        name="index"
+        swipeEdgeWidth: 250,
+        headerStatusBarHeight: 0,
+        headerStyle: {
+          backgroundColor: Colors.mint,
+        },
+        overlayColor: Colors.overlayColor,
+        headerTitleContainerStyle: {
+          width: "100%",
+          alignItems: "center",
+        },
+        headerTitleStyle: {
+          fontFamily: "Quick sand",
+          fontSize: 24.5,
+          textDecorationLine: "underline",
+          textShadowOffset: {width: 2, height: 2},
+          textShadowRadius: 4,
+          textShadowColor: "rgba(0, 0, 0, 0.2)",
+          textAlign: "center",
+          marginLeft: -41,
+        },
+        headerRightContainerStyle: {
+          display: "none",
+        },
+        headerLeft: () => (
+          <TouchableOpacity
+            style={{marginLeft: 11, marginTop: 8}}
+            onPress={() => navigation.dispatch(DrawerActions.openDrawer)}
+          >
+            <Octicons name="three-bars" size={30} />
+          </TouchableOpacity>
+        ),
+      }}
+    >
+      <Drawer.Screen
+        name="card"
         options={{
-          title: 'Tab One',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
-          headerRight: () => (
-            <Link href="/modal" asChild>
-              <Pressable>
-                {({ pressed }) => (
-                  <FontAwesome
-                    name="info-circle"
-                    size={25}
-                    color={Colors[colorScheme ?? 'light'].text}
-                    style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
-                  />
-                )}
-              </Pressable>
-            </Link>
+          title: titleTexts.dateIdeaHeaderText,
+          drawerIcon: ({focused, color}) => (
+            <View style={styles.iconContainer}>
+              <FontAwesome5
+                name="book"
+                color={color}
+                size={focused ? 24 : 20}
+              />
+            </View>
           ),
         }}
       />
-      <Tabs.Screen
-        name="two"
+      <Drawer.Screen
+        name="settings"
         options={{
-          title: 'Tab Two',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: titleTexts.settingsHeaderText,
+          drawerIcon: ({focused, color}) => (
+            <View style={styles.iconContainer}>
+              <FontAwesome5
+                name="cogs"
+                color={color}
+                size={focused ? 24 : 20}
+              />
+            </View>
+          ),
         }}
       />
-    </Tabs>
+    </Drawer>
   );
 }
+const styles = StyleSheet.create({
+  iconContainer: {
+    width: 30,
+    height: 30,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+});

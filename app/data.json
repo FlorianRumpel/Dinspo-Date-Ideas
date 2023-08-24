@@ -1,0 +1,2503 @@
+[
+  {
+    "settingsHeaderText": "Einstellungen",
+    "dateIdeaHeaderText": "Deine Date Idee",
+    "generateButtonText": "Neue Date Idee generieren",
+    "settingsLanguageText": "Sprache",
+    "drawerNavText": "Navigation",
+    "dateIdeasTexts": [
+      {
+        "heading": "Malen",
+        "text": "Kaufe zwei kleine Leinwände, Acrylfarbe und Pinsel und lade dein Date zu dem Ort deiner Wahl ein. Nun malt ihr ein Bild für den jeweils anderen. Stellt euch dabei Fragen und baut persönliche Komponenten mit ein.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Malen",
+        "text": "Kaufe eine kleine Leinwand, Acrylfarbe und Pinsel und lade dein Date zu dem Ort deiner Wahl ein. Nun stellt euch einen Timer auf je 3 Minuten und wechselt euch mit dem Malen ab. Jeder sollte mindestens 5 mal dran sein. Am Ende entsteht ein gemeinsames Kunstwerk.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Erdbeerfeld",
+        "text": "Fahrt zu einem Erdbeerfeld. sammelt zusammen Erdbeeren, lernt euch kennen und verarbeitet danach eure Erdbeeren zusammen.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Picknick",
+        "text": "Pack eine Decke, eine flasche Sekt und ein paar Snacks ein. Fahre mit deinem Date zu einem Fluss oder einem See und verbringt einen Abend am Wasser",
+        "budget": "€€"
+      },
+      {
+        "heading": "Kunstaustellung",
+        "text": "Informiere dich zu aktuellen ausstellungen in deiner gegend. Besucht gemeinsam eine Kunstausstellung und sprecht darüber, was euch gefallen hat.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Therme",
+        "text": "Besucht gemeinsam eine Therme. Genießt die Ruhe und lernt euch im Whirlpool oder während einer Massage kennen",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Barista-Kurs",
+        "text": "Meldet euch für einen Barista-Krs an und lernt neues über Kaffee und wie man schöne Formen in den Kaffee gießt.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Poetry Slam",
+        "text": "Besucht einen Poetry Slam in eurer gegend und sprecht darüber, welcher euch am besten gefallen hat und warum.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Schnitzeljagd",
+        "text": "Bereite eine kleine Schnitzeljagd vor und besucht so deine Lieblingsorte und lernt euch besser kennen.",
+        "budget": "€"
+      },
+      {
+        "heading": "Wein-tasting",
+        "text": "Suche einen Winzer in deiner nähe und macht gemeinsam ein Wein-tasting",
+        "budget": "€€"
+      },
+      {
+        "heading": "Pub Quiz",
+        "text": "Besucht als Team eine Pub Quiz Night.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Hochseilgarten",
+        "text": "Fahrt zu einem Hochseilgarten und klettert einen Parcours.",
+        "budget": "€€"
+      },
+      {
+        "heading": "100 Fragen",
+        "text": "Macht das 100 Fragen Experiment bei einem gemütlichen Picknick.",
+        "budget": "€"
+      },
+      {
+        "heading": "Stand-Up Comedy",
+        "text": "Besucht zusammen eine Stand-Up Comedy Show und testet, ob ihr zusammen lachen könnt.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Tierheim",
+        "text": "Besucht zusammen ein Tierheim in eurer Nähe und bietet eure Hilfe an.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Minigolf",
+        "text": "Fahrt zu einem Minigolf-Platz in eurer nähe. Spielt eine Partie miteinander.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Stadtrundfart",
+        "text": "Macht eine Stadtrundfahrt in eurer oder der nächstgelegenen Stadt",
+        "budget": "€€"
+      },
+      {
+        "heading": "Keramik-malkurs",
+        "text": "Meldet euch für einen Keramik-Malkurs an und bemalt schöne Tassen und Teller in eurem Stil.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Töpferkurs",
+        "text": "Macht einen Töpferkurs zusammen und lernt, wie ihr Geschirr und Vasen selbst herstellen könnt.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Stadtrallye",
+        "text": "Buche online eine Stadtrallye und rätselt euch gemeinsam ans Ziel",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Kochkurs",
+        "text": "Meldet euch für einen Kochkurs an und lernt, wie ihr landestypische Speisen eines Landes zubereiten könnt",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Dart",
+        "text": "Sucht euch eine Kneipe in der nähe und spielt ein paar runden Darts gegeneinander.",
+        "budget": "€"
+      },
+      {
+        "heading": "Sternenwarte",
+        "text": "Geh mit deinem Date zur nächsten Sternenwarte und werft einen Blick durchs Teleskop.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Jazz-Konzert",
+        "text": "Besucht ein entspanntes Jazz-Konzert in der nähe.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Flohmarkt",
+        "text": "Schlendert gemeinsam über einen Flohmarkt in der nähe.",
+        "budget": "€"
+      },
+      {
+        "heading": "Pilze sammeln",
+        "text": "Informier dich über die pilze der Saison und fahre mit deinem date in den wald um welche zu sammeln",
+        "budget": "€"
+      },
+      {
+        "heading": "Escape-room",
+        "text": "Geht in einen Escape-Room und schaut, wie schnell ihr die Rätsel lösen könnt.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Bärlauch sammeln",
+        "text": "Gehe mit deinem Date Bärlauch sammeln und verarbeitet diesen danach gemeinsam.  (Nur in der Saison April-Mai)",
+        "budget": "€"
+      },
+      {
+        "heading": "Drachen steigen",
+        "text": "Lasst gemeinsam einen Drachen steigen, wenn der Wind stark genug ist.",
+        "budget": "€"
+      },
+      {
+        "heading": "Spieleabend",
+        "text": "Ladet je eure besten Freunde ein und genießt einen gemütlichen Spieleabend zu viert.",
+        "budget": "€"
+      },
+      {
+        "heading": "Pflanzentisch",
+        "text": "Geht gemeinsam in den Baumarkt und besorgt euch Materialien um im Anschluss einen kleinen Pflanzentisch zu bauen.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Pläztchen backen",
+        "text": "Backt gemeinsam die Plätzchen eurer Wahl.",
+        "budget": "€"
+      },
+      {
+        "heading": "Kuchen backen",
+        "text": "Geht zusammen Äpfel pflücken und backt einen Apfelkuchen daraus.",
+        "budget": "€"
+      },
+      {
+        "heading": "Mario Kart",
+        "text": "Schmeißt euren Nintendo an und spielt unzählige Runden Mario Kart gegeneinander.",
+        "budget": "€"
+      },
+      {
+        "heading": "Fotos machen",
+        "text": "Geht in das nächste Fotostudio und macht neue Passbilder. Die Fotos kommen dann in das Portmonee des jeweils anderen.",
+        "budget": "€"
+      },
+      {
+        "heading": "Karaoke",
+        "text": "Besucht die nächste Karaoke-Bar und singt euch die Kehle aus dem Leib.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Puzzeln",
+        "text": "Kauft euch ein Puzzle mit Motiv eurer Wahl und löst es zusammen.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Schlitten fahren",
+        "text": "Packt einen Schlitten ein und fahrt gemeinsam die Hänge runter.",
+        "budget": "€"
+      },
+      {
+        "heading": "Postkarten schreiben",
+        "text": "Kauft euch Postkarten und schreibt lustige Nachrichten an eure Freunde, Familie oder euch selbst. Verschickt sie dann mit der Post.",
+        "budget": "€"
+      },
+      {
+        "heading": "Schlittschuh farhren",
+        "text": "Fahrt in eine Eishalle oder zu einer Eisfläche und traut euch mit Schlittschuhen aufs Eis.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Theater",
+        "text": "Informier dich über das aktuelle Theaterprogramm und besucht eine Vorstellung.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Beautyabend",
+        "text": "Geht in die Drogerie, besorgt euch Produkte für einen Beautyabend und testet sie aneinander aus.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Tischtennis-Platte",
+        "text": "Sucht die nächste Tischtennis-Platte und spielt eine Partie.",
+        "budget": "€"
+      },
+      {
+        "heading": "Wildkräuter sammeln",
+        "text": "Sammelt Wildkräuter der Saison und bereitet daraus einen Salat zu.",
+        "budget": "€"
+      },
+      {
+        "heading": "Ketten machen",
+        "text": "Besorge ein Perlenset und macht euch gegenseitig ein Armband oder eine Kette.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Holz schnitzen",
+        "text": "Kauft euch ein Schnitzmesser und schnitzt eine Figur aus einem Stück Holz.",
+        "budget": "€"
+      },
+      {
+        "heading": "Backwettbewerb",
+        "text": "Macht einen Backwettbewerb gegeneinander.",
+        "budget": "€€"
+      },
+      {
+        "heading": "3 Stationen",
+        "text": "Geht zusammen zum Bahnhof, steigt in den nächsten Zug, fahrt mindestens 3 Stationen und verbringt dort den Rest des Tages.",
+        "budget": "€"
+      },
+      {
+        "heading": "Blind kochen",
+        "text": "Kocht zusammen. Einer muss jedoch alles zubereiten während die Augen verbunden sind. Der andere darf nichts machen, außer den Blinden anleiten.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Eure Kindheit",
+        "text": "Zeigt euch gegenseitig Fotoalben aus eurer Kindheit und erzählt euch davon.",
+        "budget": "€"
+      },
+      {
+        "heading": "Billard",
+        "text": "Spielt zusammen ein paar Runden Billard.",
+        "budget": "€"
+      },
+      {
+        "heading": "Wildpark",
+        "text": "Fahrt zusammen in einen Wildpark und füttert die Tiere dort.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Boule/Petanque",
+        "text": "Spielt zusammen eine Runde Boule/Petanque.",
+        "budget": "€"
+      },
+      {
+        "heading": "IKEA",
+        "text": "Fahrt zum nächsten IKEA und probiert die Einrichtung aus, spielt Rollenspiele und esst anschließend eine Portion (veganer) Köttbullar.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Stockbrot",
+        "text": "Macht ein Feuer und backt selbstgemachte Stockbrot darüber.",
+        "budget": "€"
+      },
+      {
+        "heading": "Yoga",
+        "text": "Besucht zusammen eine Acro-Yoga oder Yoga-Stunde.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Bowlen",
+        "text": "Geht zusammen bowlen.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Sehenswürdigkeiten",
+        "text": "Lasst euch vor den Sehenswürdigkeiten eures Ortes ablichten und informiert euch über die Historie dieser.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Seepferdchen",
+        "text": "Geht in ein Schwimmbad und lasst euch auf das Seepferdchen Abzeichen prüfen.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Blut spenden",
+        "text": "Geht zusammen Blut spenden.",
+        "budget": "€"
+      },
+      {
+        "heading": "Lieblingsbücher",
+        "text": "Geht in einen Bücherladen, findet die Lieblingsbücher eurer Kindheit und stellt sie einander vor.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Bootsfahrt",
+        "text": "Macht eine romantische Bootsfahrt miteinander.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Eine gute Tat",
+        "text": "Eine gemeinsame gute Tat: Fragt einen Obdachlosen was er essen und trinken möchte und besorgt es ihm anschließend.",
+        "budget": "€"
+      },
+      {
+        "heading": "Dunkel-Café",
+        "text": "Geht gemeinsam in ein Dunkel-Café und testet eure Sinne.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Tanzkurs",
+        "text": "Besucht einen Tanz-Schnupperkurs und lasst gemeinsam die Hüften schwingen.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Cocktail Kurs",
+        "text": "Besucht gemeinsam einen Cocktail Kurs in eurer Nähe.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Upcycling",
+        "text": "Geht in einen Second Hand Laden in eurer Nähe und sucht ein gemeinsames Upcycling Projekt, welches ihr im Anschluss durchführt.",
+        "budget": "€"
+      },
+      {
+        "heading": "Geocaching",
+        "text": "Gehe mit deinem Date auf Geocaching.",
+        "budget": "€"
+      },
+      {
+        "heading": "Kartfahren",
+        "text": "Geht gemeinsam auf eine Kart Bahn und liefert euch ein Rennen.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Auf dem Bauernhof",
+        "text": "Geht zu dem nächsten Bauernhof in eurer Nähe und bietet eure Hilfe an.",
+        "budget": "€"
+      },
+      {
+        "heading": "Eigen Seife",
+        "text": "Besorge ein Set für die Erstellung von Seife und entwickelt zusammen das perfekte Produkt.",
+        "budget": "€"
+      },
+      {
+        "heading": "Fotobox-Hopping",
+        "text": "Macht ein Fotobox-Hopping und haltet eure Momente fest.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Eigene Kerzen",
+        "text": "Besorge ein Set zur Kerzenerstellung und lasst eurer Kreativität freien Lauf.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Graffiti",
+        "text": "Kauft euch ein paar Spraydosen und macht ein Graffiti an einem dafür erlaubten Ort.",
+        "budget": "€€"
+      },
+      {
+        "heading": "TikTok-Trend",
+        "text": "Sucht euch einen TikTok-Trend aus und macht ihn nach.",
+        "budget": "€"
+      },
+      {
+        "heading": "Friedhof Besuch",
+        "text": "Besucht einen lokalen Friedhof und seht euch die Gräber an.",
+        "budget": "€"
+      },
+      {
+        "heading": "Lego bauen",
+        "text": "Kauft ein Lego-Set und baut es zusammen.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Auktion",
+        "text": "Besucht eine Auktion und ersteigert etwas kleines.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Wandern",
+        "text": "Geh mit deinem Date auf einen Wanderpfad in deiner Nähe und genießt gemeinsam die Natur. Lernt dabei die verschiedenen Bäume und Waldbewohner kennen.",
+        "budget": "€"
+      },
+      {
+        "heading": "Flaschenpost",
+        "text": "Schreibt eine Flaschenpost und werft sie in einen Fluss, See oder Meer.",
+        "budget": "€"
+      },
+      {
+        "heading": "Rätseln",
+        "text": "Kauft ein Rätselheft und testet gemeinsam euer Wissen.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Rätseln",
+        "text": "Macht zusammen ein Kreuzworträtsel.",
+        "budget": "€"
+      },
+      {
+        "heading": "Fahrrad fahren",
+        "text": "Macht zusammen eine Fahrradtour.",
+        "budget": "€"
+      },
+      {
+        "heading": "Selfies",
+        "text": "Geht in ein Elektro-Markt und macht Selfies auf allen Handy-Ausstellungsstücken.",
+        "budget": "€"
+      },
+      {
+        "heading": "Vortrag",
+        "text": "Besucht gemeinsam einen Vortrag zu einem interessanten Thema und diskutiert danach darüber.",
+        "budget": "€"
+      },
+      {
+        "heading": "Bogenschießen",
+        "text": "Geht zusammen Bogenschießen.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Ein Trick",
+        "text": "Versucht gemeinsam einen Trick zu lernen (z.B Jonglieren).",
+        "budget": "€"
+      },
+      {
+        "heading": "Brauerreiführung",
+        "text": "Macht gemeinsam eine Brauereiführung.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Spiele",
+        "text": "Lernt ein neues Karten- oder Brettspiel zusammen.",
+        "budget": "€"
+      },
+      {
+        "heading": "In der Stadt",
+        "text": "Besucht verschiedene Orte der Stadt und schreibt Google-Rezensionen dazu.",
+        "budget": "€"
+      },
+      {
+        "heading": "Batik",
+        "text": "Kauft euch Textilfarbe und weiße Shirts und batikt sie zusammen.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Henna",
+        "text": "Malt euch gegenseitig Henna-Tattoos.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Chefkoch-Rezept",
+        "text": "Probiert ein Chefkoch-Rezept aus und schreibt danach eine Rezension.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Ich hab noch nie...",
+        "text": "Spielt das Spiel „ich habe noch nie…“ und lernt euch besser kennen.",
+        "budget": "€"
+      },
+      {
+        "heading": "Sport",
+        "text": "Lernt einen neuen Sport zusammen.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Weltrekord",
+        "text": "Versucht, einen Weltrekord zu brechen.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Neue Sprache",
+        "text": "Versucht, eine neue Sprache zu lernen.",
+        "budget": "€"
+      },
+      {
+        "heading": "Blumen",
+        "text": "Geht zu einem Floristen und sucht euch gegenseitig eine Blume aus. Begründet danach eure Wahl.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Eigenes Eis",
+        "text": "Stellt euer eigenes Eis her, nach euren Wünschen.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Besichtigung",
+        "text": "Besichtigt verschiedene Schlösser zusammen",
+        "budget": "€"
+      },
+      {
+        "heading": "Sportveranstaltung",
+        "text": "Besucht zusammen eine willkürliche Sportveranstaltung (Fußball, Football, Boxen, Eishockey).",
+        "budget": "€€"
+      },
+      {
+        "heading": "Flaschengärten",
+        "text": "Geht in den Baumarkt und kauft euch Material für Flaschengärten, die ihr im Anschluss damit füllt.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Origami",
+        "text": "Macht zusammen ein Origami.",
+        "budget": "€"
+      },
+      {
+        "heading": "Kalligrafie-Kurs",
+        "text": "Besucht zusammen einen Kalligrafie-Kurs und schreibt euch gegenseitig mit eurem neuen Skill eine Date-Review.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Barfußpfad",
+        "text": "Geht zusammen in einen Barfußpfad in eurer Nähe.",
+        "budget": "€"
+      },
+      {
+        "heading": "Bachwanderung",
+        "text": "Besorgt euch Wasserschuhe und macht gemeinsam eine Bachwanderung und schaut, wie weit ihr kommt.",
+        "budget": "€"
+      },
+      {
+        "heading": "Präsentationen",
+        "text": "Gebt euch gegenseitig ein willkürliches Thema für eine Präsentation und stellt sie euch nach 15 min Vorbereitung gegenseitig vor.",
+        "budget": "€"
+      },
+      {
+        "heading": "Karaoke",
+        "text": "Spielt eine Runde PowerPoint-Karaoke.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Kakaozeremonie",
+        "text": "Macht zusammen bei einer Kakaozeremonie mit.",
+        "budget": "€"
+      },
+      {
+        "heading": "Casino",
+        "text": "Geht zusammen in ein Casino.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Fortnite",
+        "text": "Spielt im Zweierteam eine Partie Fortnite zusammen und versucht, in die Top 3 zu kommen.",
+        "budget": "€"
+      },
+      {
+        "heading": "Meditation",
+        "text": "Besorge Räucherstäbchen, sorge für ein ruhiges, gemütliches Ambiente und macht gemeinsam eine geführte Meditation.",
+        "budget": "€"
+      },
+      {
+        "heading": "Messe",
+        "text": "Besucht eine aktuell stattfindende Messe in eurer Nähe und tretet in Interaktion mit den Ausstellern.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Shopping-Tour",
+        "text": "Macht zusammen eine Shopping-Tour. Jeder sucht dem anderen ein passendes Teil aus. Mal sehen wie gut ihr den Geschmack des anderen trefft.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Stadt",
+        "text": "Geht zusammen an die Orte der Stadt wo ihr noch nie ward.",
+        "budget": "€"
+      },
+      {
+        "heading": "Wochenmarkt",
+        "text": "Geht zu einem Wochenmarkt in eurer Nähe und kauft gemeinsam frisches Obst und Gemüse und bereitet damit ein schönes Mittagessen zu.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Barhopping",
+        "text": "Macht ein Barhopping und bestellt jedes Mal ein anderes Getränk oder eine andere Marke. Bewertet die Getränke/Marken jeweils von 1 bis 10 und haltet das ganze bildlich fest.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Silent-Disco",
+        "text": "Geht zusammen zu einer Silent-Disco.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Rap song",
+        "text": "Schreibt zusammen einen Rap Song und nehmt ihn im Anschluss über eine App eurer Wahl mit einem Beat auf.",
+        "budget": "€"
+      },
+      {
+        "heading": "Seifenblasen",
+        "text": "Mache mit deinem Date XXL Seifenblasen und filmt eure Kunst mit. Bei Bedarf, schaue dir vorher ein Tutorial dazu an.",
+        "budget": "€"
+      },
+      {
+        "heading": "Flachwitze",
+        "text": "Macht die Flachwitzchallenge und schaut, ob euer Humor zusammenpasst.",
+        "budget": "€"
+      },
+      {
+        "heading": "Markramee",
+        "text": "Nehmt zusammen an einem Makramee Workshop teil.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Moderation",
+        "text": "Schreibt euch gegenseitig eine Moderation auf einer Teleprompter App und versucht diese professionell Aufzusagen. Nehmt die Moderationsversuche gegenseitig auf.",
+        "budget": "€"
+      }
+    ]
+  },
+
+  {
+    "settingsHeaderText": "Settings",
+    "dateIdeaHeaderText": "Your Date Idea",
+    "generateButtonText": "Generate new Date Idea",
+    "settingsLanguageText": "Language",
+    "drawerNavText": "Navigation",
+    "dateIdeasTexts": [
+      {
+        "heading": "Paint",
+        "text": "Buy two small canvases, acrylic paint and brushes and invite your date to the location of your choice. Now you paint a picture for each other. Ask yourself questions and include personal components.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Paint",
+        "text": "Buy a small canvas, acrylic paint and brushes and invite your date to the location of your choice. Now set a timer for 3 minutes each and take turns painting. Everyone should have at least 5 turns. Am In the end, a joint work of art is created.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Strawberry Field",
+        "text": "Drive to a strawberry field. Collect strawberries together, get to know each other and then process your strawberries together.",
+        "budget": "€€"
+      },
+      {
+        "heading": "picnic",
+        "text": "Pack a blanket, a bottle of bubbly and some snacks. Take your date to a river or lake and spend an evening by the water",
+        "budget": "€€"
+      },
+      {
+        "heading": "Art Exhibition",
+        "text": "Find out about current exhibitions in your area. Visit an art exhibition together and talk about what you liked.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Therme",
+        "text": "Visit a thermal bath together. Enjoy the peace and quiet and get to know each other in the whirlpool or during a massage",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Barista Class",
+        "text": "Sign up for a Barista Class and learn about coffee and how to pour beautiful shapes into coffee.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Poetry Slam",
+        "text": "Visit a poetry slam in your area and talk about which one you liked the most and why.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Scavenger Hunt",
+        "text": "Prepare a little scavenger hunt to visit your favorite places and get to know each other better.",
+        "budget": "€"
+      },
+      {
+        "heading": "Wine tasting",
+        "text": "Find a winemaker near you and do a wine tasting together",
+        "budget": "€€"
+      },
+      {
+        "heading": "Pub Quiz",
+        "text": "Attend a pub quiz night as a team.",
+        "budget": "€€"
+      },
+      {
+        "heading": "high rope course",
+        "text": "Drive to a high ropes course and climb an obstacle course.",
+        "budget": "€€"
+      },
+      {
+        "heading": "100 Questions",
+        "text": "Do the 100 questions experiment over a leisurely picnic.",
+        "budget": "€"
+      },
+      {
+        "heading": "Stand Up Comedy",
+        "text": "Visit a stand-up comedy show together and see if you can laugh together.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Animal shelter",
+        "text": "Visit a local animal shelter together and offer to help.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Minigolf",
+        "text": "Drive to a miniature golf course near you. Play a game together.",
+        "budget": "€€"
+      },
+      {
+        "heading": "City Tour",
+        "text": "Take a city tour in your city or the nearest city",
+        "budget": "€€"
+      },
+      {
+        "heading": "Ceramic Painting Course",
+        "text": "Sign up for a ceramic painting class and paint beautiful mugs and plates in your own style.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Pottery Class",
+        "text": "Take a pottery class together and learn how to make dishes and vases yourself.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "City Rally",
+        "text": "Book a city rally online and puzzle your way to the destination together",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Cooking Class",
+        "text": "Sign up for a cooking class and learn how to prepare dishes typical of a country",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Darts",
+        "text": "Find a pub nearby and play a few rounds of darts against each other.",
+        "budget": "€"
+      },
+      {
+        "heading": "Observatory",
+        "text": "Take your date to the nearest observatory and take a look through the telescope.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Jazz Concert",
+        "text": "Go to a relaxed jazz concert nearby.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "flea market",
+        "text": "Stroll through a nearby flea market together.",
+        "budget": "€"
+      },
+      {
+        "heading": "Collect mushrooms",
+        "text": "Find out about the mushrooms of the season and take your date to the forest to collect some",
+        "budget": "€"
+      },
+      {
+        "heading": "Escape room",
+        "text": "Go to an escape room and see how fast you can solve the puzzles.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Collect wild garlic",
+        "text": "Go collect wild garlic with your date and then process it together. (April-May season only)",
+        "budget": "€"
+      },
+      {
+        "heading": "Flying Kites",
+        "text": "Fly a kite together if the wind is strong enough.",
+        "budget": "€"
+      },
+      {
+        "heading": "Game Night",
+        "text": "Invite your best friends over and enjoy a cozy game night for four.",
+        "budget": "€"
+      },
+      {
+        "heading": "Plant table",
+        "text": "Go to the hardware store together and get materials to build a small plant table afterwards.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Bake Cookies",
+        "text": "Bake the cookies of your choice together.",
+        "budget": "€"
+      },
+      {
+        "heading": "Bake a cake",
+        "text": "Go pick apples together and make an apple pie.",
+        "budget": "€"
+      },
+      {
+        "heading": "Mario Kart",
+        "text": "Fire on your Nintendo and play countless rounds of Mario Kart against each other.",
+        "budget": "€"
+      },
+      {
+        "heading": "Take photos",
+        "text": "Go to the nearest photo studio and take new passport photos. The photos then go into each other's wallets.",
+        "budget": "€"
+      },
+      {
+        "heading": "karaoke",
+        "text": "Visit the nearest karaoke bar and sing your heart out.",
+        "budget": "€€"
+      },
+      {
+        "heading": "puzzle",
+        "text": "Buy a puzzle with a motif of your choice and solve it together.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Sledding",
+        "text": "Pack a sled and go down the slopes together.",
+        "budget": "€"
+      },
+      {
+        "heading": "Write postcards",
+        "text": "Buy postcards and write funny messages to your friends, family or yourself. Then send them in the mail.",
+        "budget": "€"
+      },
+      {
+        "heading": "Ice Skate",
+        "text": "Drive to an ice rink or rink and dare to skate.",
+        "budget": "€€"
+      },
+      {
+        "heading": "theater",
+        "text": "Find out about the current theater program and attend a performance.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Beauty Night",
+        "text": "Go to the drugstore, get some products for a beauty night and try them on each other.",
+        "budget": "€€"
+      },
+      {
+        "heading": "table tennis board",
+        "text": "Find the nearest table tennis table and play a game.",
+        "budget": "€"
+      },
+      {
+        "heading": "Collect wild herbs",
+        "text": "Gather seasonal wild herbs and use them to make a salad.",
+        "budget": "€"
+      },
+      {
+        "heading": "Make Chains",
+        "text": "Get a bead set and make each other a bracelet or necklace.",
+        "budget": "€€"
+      },
+      {
+        "heading": "carve wood",
+        "text": "Buy a carving knife and carve a figure out of a piece of wood.",
+        "budget": "€"
+      },
+      {
+        "heading": "Baking Contest",
+        "text": "Do a baking contest against each other.",
+        "budget": "€€"
+      },
+      {
+        "heading": "3 stations",
+        "text": "Go to the station together, get on the next train, travel at least 3 stations and spend the rest of the day there.",
+        "budget": "€"
+      },
+      {
+        "heading": "Blind Cooking",
+        "text": "Cooks together. However, one must prepare everything while blindfolded. The other is not allowed to do anything except guide the blind.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Your childhood",
+        "text": "Show each other photo albums from your childhood and tell each other about them.",
+        "budget": "€"
+      },
+      {
+        "heading": "Billiards",
+        "text": "Play a few rounds of pool together.",
+        "budget": "€"
+      },
+      {
+        "heading": "wildlife park",
+        "text": "Drive to a wildlife park together and feed the animals there.",
+        "budget": "€€"
+      },
+      {
+        "heading": "boules/petanque",
+        "text": "Play a game of boules/petanque together.",
+        "budget": "€"
+      },
+      {
+        "heading": "IKEA",
+        "text": "Drive to the nearest IKEA and try out the facility, role-play and then eat a portion of (vegan) Köttbullar.",
+        "budget": "€€"
+      },
+      {
+        "heading": "stick bread",
+        "text": "Make a fire and bake homemade stick bread over it.",
+        "budget": "€"
+      },
+      {
+        "heading": "Yoga",
+        "text": "Take an acro-yoga or yoga class together.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Bowling",
+        "text": "Go bowling together.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Sights",
+        "text": "Have your picture taken in front of the sights in your area and find out about their history.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Seahorse",
+        "text": "Go to a swimming pool and get tested for the seahorse badge.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Donate Blood",
+        "text": "Go donate blood together.",
+        "budget": "€"
+      },
+      {
+        "heading": "Favorite Books",
+        "text": "Go to a bookstore, find your favorite childhood books and introduce them to each other.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Boat Ride",
+        "text": "Have a romantic boat trip together.",
+        "budget": "€€"
+      },
+      {
+        "heading": "A good deed",
+        "text": "A common good deed: Ask a homeless person what they want to eat and drink and then get it for them.",
+        "budget": "€"
+      },
+      {
+        "heading": "Dark Cafe",
+        "text": "Go to a dark cafe together and test your senses.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Dance Class",
+        "text": "Take a taster dance class and shake your hips together.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Cocktail Class",
+        "text": "Take a cocktail class together near you.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Upcycling",
+        "text": "Go to a second-hand shop near you and look for a joint upcycling project, which you can then carry out.",
+        "budget": "€"
+      },
+      {
+        "heading": "Geocache",
+        "text": "Go geocaching with your date.",
+        "budget": "€"
+      },
+      {
+        "heading": "karting",
+        "text": "Go to a kart track together and compete in a race.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "On the farm",
+        "text": "Go to the nearest farm and offer to help.",
+        "budget": "€"
+      },
+      {
+        "heading": "Own Soap",
+        "text": "Get a soap making kit and create the perfect product together.",
+        "budget": "€"
+      },
+      {
+        "heading": "Photobox Hopping",
+        "text": "Hop a photo box and capture your moments.",
+        "budget": "€€"
+      },
+      {
+        "heading": "My Candles",
+        "text": "Get a candle making kit and get creative.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Graffiti",
+        "text": "Buy some spray cans and do some graffiti in an allowed place.",
+        "budget": "€€"
+      },
+      {
+        "heading": "TikTok Trend",
+        "text": "Pick a TikTok trend and follow it.",
+        "budget": "€"
+      },
+      {
+        "heading": "Cemetery Visit",
+        "text": "Visit a local cemetery and look at the graves.",
+        "budget": "€"
+      },
+      {
+        "heading": "Build Lego",
+        "text": "Buy a Lego set and assemble it.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Auction",
+        "text": "Visit an auction and buy something small.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Hiking",
+        "text": "Take your date to a hiking trail near you and enjoy nature together. Get to know the different trees and forest dwellers.",
+        "budget": "€"
+      },
+      {
+        "heading": "Message in a Bottle",
+        "text": "Write a message in a bottle and throw it in a river, lake or sea.",
+        "budget": "€"
+      },
+      {
+        "heading": "puzzle",
+        "text": "Buy a puzzle book and test your knowledge together.",
+        "budget": "€€"
+      },
+      {
+        "heading": "puzzle",
+        "text": "Do a crossword puzzle together.",
+        "budget": "€"
+      },
+      {
+        "heading": "ride a bike",
+        "text": "Take a bike ride together.",
+        "budget": "€"
+      },
+      {
+        "heading": "Selfies",
+        "text": "Go to an electronics store and take selfies on all the mobile phone displays.",
+        "budget": "€"
+      },
+      {
+        "heading": "lecture",
+        "text": "Visit a lecture together on an interesting topic and then discuss it.",
+        "budget": "€"
+      },
+      {
+        "heading": "Archery",
+        "text": "Go archery together.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "A trick",
+        "text": "Try to learn a trick together (e.g. juggling).",
+        "budget": "€"
+      },
+      {
+        "heading": "Brewery Tour",
+        "text": "Do a brewery tour together.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Games",
+        "text": "Learn a new card or board game together.",
+        "budget": "€"
+      },
+      {
+        "heading": "In town",
+        "text": "Visit different places in the city and write Google reviews about them.",
+        "budget": "€"
+      },
+      {
+        "heading": "Batik",
+        "text": "Buy some fabric dye and white shirts and tie them together.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "henna",
+        "text": "Draw each other henna tattoos.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Chef Recipe",
+        "text": "Try a chef's recipe and then write a review.",
+        "budget": "€€"
+      },
+      {
+        "heading": "I've never...",
+        "text": "Play the 'Never have I ever...' game and get to know each other better.",
+        "budget": "€"
+      },
+      {
+        "heading": "sports",
+        "text": "Learn a new sport together.",
+        "budget": "€€"
+      },
+      {
+        "heading": "World Record",
+        "text": "Trying to break a world record.",
+        "budget": "€€"
+      },
+      {
+        "heading": "New language",
+        "text": "Trying to learn a new language.",
+        "budget": "€"
+      },
+      {
+        "heading": "flowers",
+        "text": "Go to a florist and choose each other a flower. Then justify your choice.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Own Ice Cream",
+        "text": "Create your own ice cream, according to your wishes.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Visit",
+        "text": "Tour different castles together",
+        "budget": "€"
+      },
+      {
+        "heading": "Sporting Event",
+        "text": "Attend a random sporting event (soccer, football, boxing, ice hockey) together.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Bottle Gardens",
+        "text": "Go to the hardware store and buy materials for bottle gardens, which you then fill with them.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Origami",
+        "text": "Make an origami together.",
+        "budget": "€"
+      },
+      {
+        "heading": "Calligraphy Course",
+        "text": "Take a calligraphy class together and write a date review for each other using your new skill.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Barefoot Trail",
+        "text": "Go to a barefoot trail near you together.",
+        "budget": "€"
+      },
+      {
+        "heading": "Stream hike",
+        "text": "Get water shoes and go for a creek hike together and see how far you can get.",
+        "budget": "€"
+      },
+      {
+        "heading": "Presentations",
+        "text": "Give each other a random topic for a presentation and present it to each other after 15 minutes of preparation.",
+        "budget": "€"
+      },
+      {
+        "heading": "karaoke",
+        "text": "Play a round of PowerPoint karaoke.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Cocoa Ceremony",
+        "text": "Join a cacao ceremony together.",
+        "budget": "€"
+      },
+      {
+        "heading": "Casino",
+        "text": "Go to a casino together.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Fortnite",
+        "text": "Team up in a two-person game of Fortnite and try to get in the top 3.",
+        "budget": "€"
+      },
+      {
+        "heading": "Meditation",
+        "text": "Get some incense sticks, create a quiet, comfortable atmosphere and do a guided meditation together.",
+        "budget": "€"
+      },
+      {
+        "heading": "fair",
+        "text": "Visit a current trade fair near you and interact with the exhibitors.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Shopping Tour",
+        "text": "Do a shopping tour together. Everyone chooses a suitable piece for the other. Let's see how well you meet the taste of the other.",
+        "budget": "€€€"
+      },
+      {
+        "heading": "city",
+        "text": "Go together to places in the city where you've never been.",
+        "budget": "€"
+      },
+      {
+        "heading": "Weekly Market",
+        "text": "Go to a weekly market near you and buy fresh fruit and vegetables together and prepare a nice lunch with them.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Bar Hopping",
+        "text": "Bar hop, ordering a different drink or brand each time. Rate each drink/brand from 1 to 10 and capture the whole thing.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Silent Disco",
+        "text": "Go to a silent disco together.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Rap song",
+        "text": "Write a rap song together and then record it with a beat using an app of your choice.",
+        "budget": "€"
+      },
+      {
+        "heading": "Bubbles",
+        "text": "Make XXL soap bubbles with your date and film your art. If necessary, watch a tutorial beforehand.",
+        "budget": "€"
+      },
+      {
+        "heading": "Flat jokes",
+        "text": "Do the flat joke challenge and see if your humor matches.",
+        "budget": "€"
+      },
+      {
+        "heading": "Markramee",
+        "text": "Take part in a macrame workshop together.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Moderation",
+        "text": "Write each other a moderation on a teleprompter app and try to recite it professionally. Record each other's moderation attempts.",
+        "budget": "€"
+      }
+    ]
+  },
+
+  {
+    "settingsHeaderText": "Paramètres",
+    "dateIdeaHeaderText": "Votre idée de date",
+    "generateButtonText": "Générer une nouvelle idée de date",
+    "settingsLanguageText": "Langue",
+    "drawerNavText": "Navigation",
+    "dateIdeasTexts": [
+      {
+        "heading": "Peindre",
+        "text": "Achetez deux petites toiles, de la peinture acrylique et des pinceaux et invitez votre rendez-vous à l'endroit de votre choix. Vous allez maintenant peindre un tableau pour l'autre. Posez-vous des questions et intégrez des composantes personnelles",
+        "budget": "€€"
+      },
+      {
+        "heading": "Peindre",
+        "text": "Achetez une petite toile, de la peinture acrylique et des pinceaux et invitez votre partenaire à l'endroit de votre choix. Maintenant, réglez une minuterie à 3 minutes chacun et peignez à tour de rôle. Chacun devrait s'y prendre au moins cinq fois. A la fin, une œuvre d'art commune sera créée",
+        "budget": "€€"
+      },
+      {
+        "heading": "Champ de fraises",
+        "text": "Allez dans un champ de fraises. ramassez des fraises ensemble, apprenez à vous connaître et transformez ensuite vos fraises ensemble",
+        "budget": "€€"
+      },
+      {
+        "heading": "Pique-nique",
+        "text": "Emporte une couverture, une bouteille de champagne et quelques snacks. Emmène ton rendez-vous à une rivière ou un lac et passe une soirée au bord de l'eau",
+        "budget": "€€"
+      },
+      {
+        "heading": "Exposition d'art",
+        "text": "Renseigne-toi sur les expositions actuelles dans ta région. Visitez ensemble une exposition d'art et parlez de ce que vous avez aimé",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Thermes",
+        "text": "Visitez ensemble un centre thermal. Profitez du calme et apprenez à vous connaître dans le jacuzzi ou pendant un massage",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Cours de barista",
+        "text": "Inscrivez-vous à un cours de barista et apprenez de nouvelles choses sur le café et comment verser de belles formes dans le café",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Slam de poésie",
+        "text": "Assistez à un slam de poésie dans votre région et parlez de celui que vous avez préféré et pourquoi.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Chasse au trésor",
+        "text": "Préparez une petite chasse au trésor pour visiter vos lieux préférés et apprendre à mieux vous connaître",
+        "budget": "€"
+      },
+      {
+        "heading": "Dégustation de vin",
+        "text": "Trouvez un vigneron près de chez vous et faites une dégustation de vin ensemble",
+        "budget": "€€"
+      },
+      {
+        "heading": "Pub Quiz",
+        "text": "Assistez en équipe à un Pub Quiz Night.",
+        "budget": "€€"
+      },
+      {
+        "heading": "Accrobranche",
+        "text": "Rendez-vous dans un parc d'accrobranche et grimpez sur un parcours",
+        "budget": "€€"
+      },
+      {
+        "heading": "100 questions",
+        "text": "Faites l'expérience des 100 questions lors d'un agréable pique-nique",
+        "budget": "€"
+      },
+      {
+        "heading": "Stand-Up Comedy",
+        "text": "Assistez ensemble à un spectacle de stand-up comedy et testez si vous pouvez rire ensemble",
+        "budget": "€€"
+      },
+      {
+        "heading": "Refuge pour animaux",
+        "text": "Visitez ensemble un refuge pour animaux près de chez vous et proposez votre aide",
+        "budget": "€€"
+      },
+      {
+        "heading": "Mini-golf",
+        "text": "Rendez-vous sur un terrain de minigolf près de chez vous. Jouez une partie ensemble",
+        "budget": "€€"
+      },
+      {
+        "heading": "Tour de ville",
+        "text": "Faites un tour de ville dans votre ville ou dans la ville la plus proche",
+        "budget": "€€"
+      },
+      {
+        "heading": "Cours de peinture sur céramique",
+        "text": "Inscrivez-vous à un cours de peinture sur céramique et peignez de belles tasses et assiettes dans votre style",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Cours de poterie",
+        "text": "Faites un cours de poterie ensemble et apprenez à faire de la vaisselle et des vases vous-même",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Rallye en ville",
+        "text": "Réservez un rallye de ville en ligne et jouez aux devinettes ensemble jusqu'à l'arrivée",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Cours de cuisine",
+        "text": "Inscrivez-vous à un cours de cuisine et apprenez à préparer les plats typiques d'un pays",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Fléchettes",
+        "text": "Trouvez un bar près de chez vous et jouez quelques parties de fléchettes l'un contre l'autre",
+        "budget": "€"
+      },
+      {
+        "heading": "Observatoire",
+        "text": "Emmène ton rendez-vous à l'observatoire le plus proche et jette un coup d'œil au télescope",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Concert de jazz",
+        "text": "Assistez à un concert de jazz décontracté à proximité",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Marché aux puces",
+        "text": "Flânez ensemble dans un marché aux puces près de chez vous",
+        "budget": "€"
+      },
+      {
+        "heading": "Cueillir des champignons",
+        "text": "Informe-toi sur les champignons de la saison et emmène ton rencard en forêt pour en cueillir",
+        "budget": "€"
+      },
+      {
+        "heading": "Escape-room",
+        "text": "Allez dans une escape-room et voyez à quelle vitesse vous pouvez résoudre les énigmes",
+        "budget": "€€"
+      },
+      {
+        "heading": "Cueillir de l'ail des ours",
+        "text": "Va cueillir de l'ail des ours avec ton rendez-vous et transforme-le ensuite ensemble.  (Seulement en avril-mai)",
+        "budget": "€"
+      },
+      {
+        "heading": "Faire du cerf-volant",
+        "text": "Faites voler un cerf-volant ensemble si le vent est assez fort",
+        "budget": "€"
+      },
+      {
+        "heading": "Soirée de jeux",
+        "text": "Invitez chacun vos meilleurs amis et profitez d'une agréable soirée de jeux à quatre.",
+        "budget": "€"
+      },
+      {
+        "heading": "Table de plantes",
+        "text": "Allez ensemble à la quincaillerie et procurez-vous des matériaux pour ensuite construire une petite table de plantes",
+        "budget": "€€"
+      },
+      {
+        "heading": "Cuisiner une petite table",
+        "text": "Cuisinez ensemble les biscuits de votre choix",
+        "budget": "€"
+      },
+      {
+        "heading": "Faire un gâteau",
+        "text": "Allez cueillir des pommes ensemble et faites-en une tarte aux pommes",
+        "budget": "€"
+      },
+      {
+        "heading": "Mario Kart",
+        "text": "Allumez votre Nintendo et jouez d'innombrables tours de Mario Kart les uns contre les autres",
+        "budget": "€"
+      },
+      {
+        "heading": "Prendre des photos",
+        "text": "Allez dans le studio photo le plus proche et prenez de nouvelles photos d'identité. Les photos seront ensuite placées dans le porte-monnaie de chacun",
+        "budget": "€"
+      },
+      {
+        "heading": "Karaoké",
+        "text": "Rendez-vous dans le bar karaoké le plus proche et chantez à gorge déployée",
+        "budget": "€€"
+      },
+      {
+        "heading": "Faire un puzzle",
+        "text": "Achetez un puzzle avec le motif de votre choix et résolvez-le ensemble",
+        "budget": "€€"
+      },
+      {
+        "heading": "Faire de la luge",
+        "text": "Emportez une luge et dévalez les pentes ensemble",
+        "budget": "€"
+      },
+      {
+        "heading": "Écrire des cartes postales",
+        "text": "Achetez des cartes postales et écrivez des messages amusants à vos amis, à votre famille ou à vous-même. Envoyez-les ensuite par la poste",
+        "budget": "€"
+      },
+      {
+        "heading": "Faire du patin à glace",
+        "text": "Rendez-vous dans une patinoire ou une surface de glace et osez chausser des patins à glace",
+        "budget": "€€"
+      },
+      {
+        "heading": "Théâtre",
+        "text": "Informe-toi sur le programme actuel du théâtre et assiste à une représentation",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Soirée beauté",
+        "text": "Allez à la droguerie, procurez-vous des produits pour une soirée beauté et testez-les les uns sur les autres",
+        "budget": "€€"
+      },
+      {
+        "heading": "Table de ping-pong",
+        "text": "Trouvez la table de ping-pong la plus proche et faites une partie",
+        "budget": "€"
+      },
+      {
+        "heading": "Cueillir des herbes sauvages",
+        "text": "Cueillez des herbes sauvages de saison et préparez une salade avec.",
+        "budget": "€"
+      },
+      {
+        "heading": "Faire des chaînes",
+        "text": "Procurez-vous un kit de perles et faites-vous mutuellement un bracelet ou un collier",
+        "budget": "€€"
+      },
+      {
+        "heading": "Sculpter du bois",
+        "text": "Achetez un couteau de sculpture et sculptez une figurine dans un morceau de bois",
+        "budget": "€"
+      },
+      {
+        "heading": "Concours de pâtisserie",
+        "text": "Faites un concours de pâtisserie les uns contre les autres",
+        "budget": "€€"
+      },
+      {
+        "heading": "3 stations",
+        "text": "Allez ensemble à la gare, montez dans le prochain train, faites au moins 3 arrêts et passez-y le reste de la journée",
+        "budget": "€"
+      },
+      {
+        "heading": "Cuisiner à l'aveugle",
+        "text": "Cuisinez ensemble. L'un d'entre eux doit cependant tout préparer pendant que ses yeux sont bandés. L'autre ne doit rien faire, sauf guider l'aveugle",
+        "budget": "€€"
+      },
+      {
+        "heading": "Votre enfance",
+        "text": "Montrez-vous des albums photos de votre enfance et racontez-vous mutuellement",
+        "budget": "€"
+      },
+      {
+        "heading": "Billard",
+        "text": "Jouez ensemble quelques parties de billard",
+        "budget": "€"
+      },
+      {
+        "heading": "Parc animalier",
+        "text": "Allez ensemble dans un parc animalier et nourrissez les animaux qui s'y trouvent",
+        "budget": "€€"
+      },
+      {
+        "heading": "Boule/Pétanque",
+        "text": "Jouez ensemble à la pétanque",
+        "budget": "€"
+      },
+
+      {
+        "heading": "IKEA",
+        "text": "Allez à l'IKEA le plus proche et essayez l'aménagement, jouez à des jeux de rôle, puis mangez une portion de Köttbullar (végétalien)",
+        "budget": "€€"
+      },
+      {
+        "heading": "Pain de canne",
+        "text": "Faites un feu et cuisez du pain de canne fait maison au-dessus",
+        "budget": "€"
+      },
+      {
+        "heading": "Yoga",
+        "text": "Assistez ensemble à un cours d'acro-yoga ou de yoga",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Bowling",
+        "text": "Allez jouer au bowling ensemble",
+        "budget": "€€"
+      },
+      {
+        "heading": "Curiosités",
+        "text": "Faites-vous photographier devant les monuments de votre localité et informez-vous sur leur histoire",
+        "budget": "€€"
+      },
+      {
+        "heading": "Hippocampe",
+        "text": "Allez dans une piscine et faites-vous tester pour l'insigne de l'hippocampe",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Donner son sang",
+        "text": "Allez donner votre sang ensemble",
+        "budget": "€"
+      },
+      {
+        "heading": "Livres préférés",
+        "text": "Allez dans une librairie, trouvez les livres préférés de votre enfance et présentez-les les uns aux autres",
+        "budget": "€€"
+      },
+      {
+        "heading": "Promenade en bateau",
+        "text": "Faites une promenade romantique en bateau ensemble",
+        "budget": "€€"
+      },
+      {
+        "heading": "Une bonne action",
+        "text": "Une bonne action commune : demandez à un sans-abri ce qu'il veut manger et boire, puis procurez-le lui.",
+        "budget": "€"
+      },
+      {
+        "heading": "Café des ténèbres",
+        "text": "Allez ensemble dans un café sombre et testez vos sens",
+        "budget": "€€"
+      },
+      {
+        "heading": "Cours de danse",
+        "text": "Assistez à un cours d'initiation à la danse et faites bouger vos hanches ensemble",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Cours de cocktail",
+        "text": "Suivez ensemble un cours de cocktail près de chez vous",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Upcycling",
+        "text": "Allez dans un magasin de seconde main près de chez vous et cherchez un projet d'upcycling commun que vous réaliserez par la suite.",
+        "budget": "€"
+      },
+      {
+        "heading": "Geocaching",
+        "text": "Va faire du géocaching avec ton rendez-vous",
+        "budget": "€"
+      },
+      {
+        "heading": "Faire du karting",
+        "text": "Allez ensemble sur une piste de karting et faites la course",
+        "budget": "€€€"
+      },
+      {
+        "heading": "À la ferme",
+        "text": "Allez à la ferme la plus proche de chez vous et proposez votre aide",
+        "budget": "€"
+      },
+      {
+        "heading": "Propre savon",
+        "text": "Obtenez un kit pour créer du savon et développez ensemble le produit parfait",
+        "budget": "€"
+      },
+      {
+        "heading": "Saut de boîte photo",
+        "text": "Faites un photobox hopping et immortalisez vos moments",
+        "budget": "€€"
+      },
+      {
+        "heading": "Propres bougies",
+        "text": "Procure-toi un kit pour créer des bougies et laisse libre cours à ta créativité",
+        "budget": "€€"
+      },
+      {
+        "heading": "Graffiti",
+        "text": "Achetez des bombes de peinture et faites un graffiti dans un endroit autorisé à cet effet",
+        "budget": "€€"
+      },
+      {
+        "heading": "Tendance TikTok",
+        "text": "Choisissez une tendance TikTok et reproduisez-la",
+        "budget": "€"
+      },
+      {
+        "heading": "Visite de cimetière",
+        "text": "Visitez un cimetière local et regardez les tombes",
+        "budget": "€"
+      },
+      {
+        "heading": "Construire des Lego",
+        "text": "Achetez un jeu de Lego et assemblez-le",
+        "budget": "€€"
+      },
+      {
+        "heading": "Vente aux enchères",
+        "text": "Assistez à une vente aux enchères et achetez quelque chose de petit",
+        "budget": "€€"
+      },
+      {
+        "heading": "Randonnée",
+        "text": "Emmène ton rendez-vous sur un sentier de randonnée près de chez toi et profite ensemble de la nature. Apprends ainsi à connaître les différents arbres et habitants de la forêt",
+        "budget": "€"
+      },
+      {
+        "heading": "Message dans une bouteille",
+        "text": "Écrivez un message dans une bouteille et jetez-le dans une rivière, un lac ou la mer",
+        "budget": "€"
+      },
+      {
+        "heading": "Devinettes",
+        "text": "Achetez un cahier de devinettes et testez vos connaissances ensemble",
+        "budget": "€€"
+      },
+      {
+        "heading": "Enigmes",
+        "text": "Faites des mots croisés ensemble",
+        "budget": "€"
+      },
+      {
+        "heading": "Faire du vélo",
+        "text": "Faites une balade à vélo ensemble",
+        "budget": "€"
+      },
+
+      {
+        "heading": "Selfies",
+        "text": "Allez dans un magasin d'électronique et prenez des selfies sur toutes les pièces d'exposition de téléphones portables",
+        "budget": "€"
+      },
+      {
+        "heading": "Conférence",
+        "text": "Assistez ensemble à une conférence sur un sujet intéressant et discutez-en ensuite",
+        "budget": "€"
+      },
+      {
+        "heading": "Tir à l'arc",
+        "text": "Allez faire du tir à l'arc ensemble",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Un tour",
+        "text": "Essayez d'apprendre un tour ensemble (par exemple, le jonglage)",
+        "budget": "€"
+      },
+      {
+        "heading": "Visite guidée de la brasserie",
+        "text": "Faites ensemble une visite guidée de la brasserie",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Jeux",
+        "text": "Apprenez ensemble un nouveau jeu de cartes ou de plateau",
+        "budget": "€"
+      },
+      {
+        "heading": "En ville",
+        "text": "Visitez différents endroits de la ville et rédigez des critiques Google à leur sujet",
+        "budget": "€"
+      },
+      {
+        "heading": "Batik",
+        "text": "Achetez de la peinture textile et des t-shirts blancs et batistez-les ensemble",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Henné",
+        "text": "Dessinez des tatouages au henné les uns pour les autres",
+        "budget": "€€"
+      },
+      {
+        "heading": "Recette de cuisine du chef",
+        "text": "Essayez une recette de chef et rédigez ensuite une critique",
+        "budget": "€€"
+      },
+      {
+        "heading": "Je n'ai jamais...",
+        "text": "Jouez au jeu 'je n'ai jamais...' et apprenez à mieux vous connaître",
+        "budget": "€"
+      },
+      {
+        "heading": "Sport",
+        "text": "Apprenez un nouveau sport ensemble",
+        "budget": "€€"
+      },
+      {
+        "heading": "Record du monde",
+        "text": "Essayez de battre un record du monde",
+        "budget": "€€"
+      },
+      {
+        "heading": "Nouvelle langue",
+        "text": "Essaye d'apprendre une nouvelle langue",
+        "budget": "€"
+      },
+      {
+        "heading": "Fleurs",
+        "text": "Allez chez un fleuriste et choisissez une fleur l'un pour l'autre. Justifiez ensuite votre choix",
+        "budget": "€€"
+      },
+      {
+        "heading": "Propre glace",
+        "text": "Fabriquez votre propre glace, selon vos envies",
+        "budget": "€€"
+      },
+      {
+        "heading": "Visite",
+        "text": "Visitez différents châteaux ensemble",
+        "budget": "€"
+      },
+      {
+        "heading": "Événement sportif",
+        "text": "Assistez ensemble à un événement sportif au choix (football, football américain, boxe, hockey sur glace)",
+        "budget": "€€"
+      },
+      {
+        "heading": "Jardins de bouteilles",
+        "text": "Allez au magasin de bricolage et achetez du matériel pour faire des jardins de bouteilles que vous remplirez ensuite",
+        "budget": "€€"
+      },
+      {
+        "heading": "Origami",
+        "text": "Faites un origami ensemble",
+        "budget": "€"
+      },
+      {
+        "heading": "Cours de calligraphie",
+        "text": "Suivez ensemble un cours de calligraphie et écrivez l'un à l'autre une revue de date avec votre nouvelle compétence",
+        "budget": "€€"
+      },
+      {
+        "heading": "Sentier pieds nus",
+        "text": "Allez ensemble dans un sentier pieds nus près de chez vous",
+        "budget": "€"
+      },
+      {
+        "heading": "Randonnée dans un ruisseau",
+        "text": "Procurez-vous des chaussures d'eau et faites ensemble une randonnée dans un ruisseau et voyez jusqu'où vous pouvez aller.",
+        "budget": "€"
+      },
+      {
+        "heading": "Présentations",
+        "text": "Donnez-vous mutuellement un thème arbitraire pour une présentation et présentez-vous mutuellement après 15 min de préparation",
+        "budget": "€"
+      },
+      {
+        "heading": "Karaoké",
+        "text": "Jouez une partie de karaoké PowerPoint",
+        "budget": "€€"
+      },
+      {
+        "heading": "Cérémonie du cacao",
+        "text": "Participez ensemble à une cérémonie du cacao",
+        "budget": "€"
+      },
+      {
+        "heading": "Casino",
+        "text": "Allez ensemble dans un casino",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Fortnite",
+        "text": "Jouez une partie de Fortnite ensemble en équipe de deux et essayez de vous classer dans le top 3",
+        "budget": "€"
+      },
+      {
+        "heading": "Méditation",
+        "text": "Procurez-vous des bâtonnets d'encens, assurez-vous d'une ambiance calme et confortable et faites ensemble une méditation guidée.",
+        "budget": "€"
+      },
+      {
+        "heading": "Salon",
+        "text": "Visitez un salon qui se tient actuellement près de chez vous et entrez en interaction avec les exposants",
+        "budget": "€€"
+      },
+      {
+        "heading": "Shopping",
+        "text": "Faites du shopping ensemble. Chacun choisit un article qui convient à l'autre. Nous verrons si vous êtes à la hauteur des goûts de l'autre",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Ville",
+        "text": "Allez ensemble dans les endroits de la ville où vous n'êtes jamais allés",
+        "budget": "€"
+      },
+      {
+        "heading": "Marché hebdomadaire",
+        "text": "Allez au marché hebdomadaire le plus proche de chez vous et achetez ensemble des fruits et légumes frais pour préparer un bon déjeuner",
+        "budget": "€€"
+      },
+      {
+        "heading": "Barhopping",
+        "text": "Faites un bar shopping et commandez à chaque fois une boisson ou une marque différente. Notez les boissons/marques de 1 à 10 à chaque fois et prenez une photo de l'ensemble",
+        "budget": "€€"
+      },
+      {
+        "heading": "Discothèque silencieuse",
+        "text": "Allez ensemble à une discothèque silencieuse",
+        "budget": "€€"
+      },
+      {
+        "heading": "Chanson de rap",
+        "text": "Écrivez ensemble une chanson de rap et enregistrez-la ensuite avec un beat via l'application de votre choix.",
+        "budget": "€"
+      },
+      {
+        "heading": "Bulles de savon",
+        "text": "Fais des bulles de savon XXL avec ton rendez-vous et filme votre art. Si nécessaire, regarde au préalable un tutoriel à ce sujet",
+        "budget": "€"
+      },
+      {
+        "heading": "Blagues plates",
+        "text": "Faites le défi des blagues plates et voyez si votre humour est compatible",
+        "budget": "€"
+      },
+      {
+        "heading": "Markramee",
+        "text": "Participez ensemble à un atelier de macramé",
+        "budget": "€€"
+      },
+      {
+        "heading": "Modération",
+        "text": "Écrivez mutuellement une présentation sur une application de téléprompteur et essayez de la réciter de manière professionnelle. Enregistrez mutuellement vos tentatives de modération",
+        "budget": "€"
+      }
+    ]
+  },
+
+  {
+    "settingsHeaderText": "Ajustes",
+    "dateIdeaHeaderText": "Tu idea de fecha",
+    "generateButtonText": "Generar nueva idea de fecha",
+    "settingsLanguageText": "Idioma",
+    "drawerNavText": "Navegación",
+    "dateIdeasTexts": [
+      {
+        "heading": "Paint",
+        "text": "Compra dos lienzos pequeños, pintura acrílica y pinceles e invita a tu cita al lugar que elijáis. Pintad un cuadro el uno para el otro. Haceos preguntas e incluid componentes personales",
+        "presupuesto": "€€"
+      },
+      {
+        "heading": "pintura",
+        "text": "Compra un pequeño lienzo, pintura acrílica y pinceles e invita a tu cita al lugar que prefieras. Pon un cronómetro para 3 minutos cada uno y pinta por turnos. Cada uno debería tener al menos 5 turnos. Am Al final, se crea una obra de arte conjunta",
+        "presupuesto": "€€"
+      },
+      {
+        "heading": "Campo de fresas",
+        "text": "Conduce hasta un campo de fresas. Recojan fresas juntos, conózcanse y luego procesen sus fresas juntos",
+        "budget": "€€"
+      },
+      {
+        "heading": "picnic",
+        "text": "Prepara una manta, una botella de champán y algo para picar. Lleva a tu cita a un río o un lago y pasad una velada junto al agua",
+        "budget": "€€"
+      },
+      {
+        "heading": "Exposición de arte",
+        "text": "Infórmate sobre las exposiciones actuales en tu zona. Visitad juntos una exposición de arte y hablad de lo que os ha gustado",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Therme",
+        "text": "Visitad juntos unas termas. Disfrutad de la tranquilidad y conoceros en la bañera de hidromasaje o durante un masaje",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Clase de barista",
+        "text": "Apúntate a una Clase de Barista y aprende sobre el café y cómo verter bellas formas en el café",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Poetry Slam",
+        "text": "Visita un slam de poesía de tu zona y comenta cuál te ha gustado más y por qué",
+        "budget": "€€"
+      },
+      {
+        "heading": "Búsqueda del tesoro",
+        "text": "Preparad una pequeña yincana para visitar vuestros lugares favoritos y conoceros mejor",
+        "budget": "€"
+      },
+      {
+        "heading": "Cata de vinos",
+        "text": "Encuentra un enólogo cerca de ti y haced juntos una cata de vinos",
+        "budget": "€€"
+      },
+      {
+        "heading": "Pub Quiz",
+        "text": "Asistir en equipo a una noche de concurso en un pub",
+        "budget": "€€"
+      },
+      {
+        "heading": "curso de cuerdas altas",
+        "text": "Ir en coche a un circuito de cuerdas altas y escalar una carrera de obstáculos",
+        "budget": "€€"
+      },
+      {
+        "heading": "100 preguntas",
+        "text": "Haz el experimento de las 100 preguntas durante un picnic tranquilo",
+        "budget": "€"
+      },
+      {
+        "heading": "Stand Up Comedy",
+        "text": "Visitar juntos un espectáculo de stand-up comedy y ver si podéis reíros juntos",
+        "budget": "€€"
+      },
+      {
+        "heading": "Refugio de animales",
+        "text": "Visitar juntos un refugio de animales local y ofrecerse a ayudar",
+        "budget": "€€"
+      },
+      {
+        "heading": "Minigolf",
+        "text": "Conduce hasta un campo de minigolf cercano. Jugad una partida juntos",
+        "budget": "€€"
+      },
+      {
+        "heading": "Visita a la ciudad",
+        "text": "Haz un city tour en tu ciudad o en la ciudad más cercana",
+        "budget": "€€"
+      },
+      {
+        "heading": "Curso de pintura cerámica",
+        "text": "Apúntate a una clase de pintura cerámica y pinta preciosas tazas y platos a tu estilo",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Clase de cerámica",
+        "text": "Toma una clase de cerámica juntos y aprende a hacer platos y jarrones tú mismo",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Rally de la ciudad",
+        "text": "Reserva un rally urbano online y rompecabezas para llegar juntos al destino",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Clase de cocina",
+        "text": "Apúntate a una clase de cocina y aprende a preparar platos típicos de un país",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Dardos",
+        "text": "Buscar un pub cercano y jugar unas rondas de dardos unos contra otros",
+        "budget": "€"
+      },
+      {
+        "heading": "Observatorio",
+        "text": "Lleva a tu cita al observatorio más cercano y echa un vistazo por el telescopio",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Concierto de Jazz",
+        "text": "Ir a un relajado concierto de jazz cercano",
+        "budget": "€€€"
+      },
+      {
+        "heading": "mercadillo",
+        "text": "Pasear juntos por un mercadillo cercano",
+        "budget": "€"
+      },
+      {
+        "heading": "Recoger setas",
+        "text": "Infórmate sobre las setas de la temporada y lleva a tu cita al bosque a recoger algunas",
+        "budget": "€"
+      },
+      {
+        "heading": "Escape room",
+        "text": "Ir a una sala de escape y ver lo rápido que puedes resolver los puzles",
+        "budget": "€€"
+      },
+      {
+        "heading": "Recoger ajos silvestres",
+        "text": "Ve a recoger ajos silvestres con tu pareja y luego procesadlos juntos. (Solo temporada de abril-mayo)",
+        "budget": "€"
+      },
+      {
+        "heading": "Cometas voladoras",
+        "text": "Volar una cometa juntos si el viento es lo suficientemente fuerte",
+        "budget": "€"
+      },
+      {
+        "heading": "Noche de juegos",
+        "text": "Invita a tus mejores amigos y disfruta de una acogedora noche de juegos para cuatro",
+        "budget": "€"
+      },
+      {
+        "heading": "Tabla de plantas",
+        "text": "Ir juntos a la ferretería y conseguir materiales para construir después una pequeña mesa para plantas",
+        "budget": "€€"
+      },
+      {
+        "heading": "Hornear galletas",
+        "text": "Hornea juntos las galletas que elijas",
+        "budget": "€"
+      },
+      {
+        "heading": "Hornear un pastel",
+        "text": "Ir a recoger manzanas juntos y hacer una tarta de manzana",
+        "budget": "€"
+      },
+      {
+        "heading": "Mario Kart",
+        "text": "Enciende tu Nintendo y juega innumerables rondas de Mario Kart contra los demás",
+        "budget": "€"
+      },
+      {
+        "heading": "Hacer fotos",
+        "text": "Ir al estudio fotográfico más cercano y hacerse nuevas fotos para el pasaporte. Las fotos luego van en la cartera de cada uno",
+        "budget": "€"
+      },
+      {
+        "heading": "karaoke",
+        "text": "Visita el bar de karaoke más cercano y canta a pleno pulmón",
+        "budget": "€€"
+      },
+      {
+        "heading": "puzzle",
+        "text": "Compra un puzzle con el motivo que elijas y resolvedlo juntos",
+        "budget": "€€"
+      },
+      {
+        "heading": "Trineo",
+        "text": "Empaquetad un trineo y bajad juntos por las pistas",
+        "budget": "€"
+      },
+      {
+        "heading": "Escribir postales",
+        "text": "Compra postales y escribe mensajes divertidos a tus amigos, familiares o a ti mismo. Luego envíalas por correo",
+        "budget": "€"
+      },
+      {
+        "heading": "Patinaje sobre hielo",
+        "text": "Conduce hasta una pista de hielo o patinódromo y atrévete a patinar",
+        "budget": "€€"
+      },
+      {
+        "heading": "teatro",
+        "text": "Infórmate sobre la programación teatral actual y asiste a una representación",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Noche de belleza",
+        "text": "Ir a la farmacia, comprar algunos productos para una noche de belleza y probarlos entre vosotros",
+        "budget": "€€"
+      },
+      {
+        "heading": "tabla de tenis de mesa",
+        "text": "Encuentra la mesa de ping pong más cercana y juega una partida",
+        "budget": "€"
+      },
+      {
+        "heading": "Recoger hierbas silvestres",
+        "text": "Recoger hierbas silvestres de temporada y usarlas para hacer una ensalada",
+        "budget": "€"
+      },
+      {
+        "heading": "Hacer cadenas",
+        "text": "Consigue un juego de cuentas y haced entre todos una pulsera o un collar",
+        "budget": "€€"
+      },
+      {
+        "heading": "tallar madera",
+        "text": "Comprar un cuchillo de tallar y tallar una figura en un trozo de madera",
+        "budget": "€"
+      },
+      {
+        "heading": "Concurso de repostería",
+        "text": "Hacer un concurso de repostería unos contra otros",
+        "budget": "€€"
+      },
+      {
+        "heading": "3 estaciones",
+        "text": "Ir juntos a la estación, coger el siguiente tren, recorrer al menos 3 estaciones y pasar allí el resto del día",
+        "budget": "€"
+      },
+      {
+        "heading": "Cocina a ciegas",
+        "text": "Cocinan juntos. Sin embargo, uno debe prepararlo todo con los ojos vendados. El otro no puede hacer nada, salvo guiar al ciego",
+        "presupuesto": "€€"
+      },
+      {
+        "heading": "Tu infancia",
+        "text": "Mostraros álbumes de fotos de vuestra infancia y hablaros de ellos",
+        "budget": "€"
+      },
+      {
+        "heading": "Billar",
+        "text": "Jugar unas rondas de billar juntos",
+        "budget": "€"
+      },
+      {
+        "heading": "parque natural",
+        "text": "Ir juntos en coche a un parque de vida salvaje y dar de comer a los animales que hay allí",
+        "budget": "€€"
+      },
+      {
+        "heading": "boules/petanque",
+        "text": "Jugar juntos una partida de petanca/boulles",
+        "budget": "€"
+      },
+      {
+        "heading": "IKEA",
+        "text": "Conduce hasta el IKEA más cercano y prueba las instalaciones, haz un juego de rol y luego cómete una ración de Köttbullar (vegano)",
+        "budget": "€€"
+      },
+      {
+        "heading": "pan de palo",
+        "text": "Hacer un fuego y hornear sobre él pan de palo casero",
+        "budget": "€"
+      },
+      {
+        "heading": "Yoga",
+        "text": "Tomar juntos una clase de acro-yoga o yoga",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Bolos",
+        "text": "Ir juntos a la bolera",
+        "budget": "€€"
+      },
+      {
+        "heading": "Lugares de interés",
+        "text": "Hazte una foto delante de los monumentos de tu zona y conoce su historia",
+        "budget": "€€"
+      },
+      {
+        "heading": "Caballito de mar",
+        "text": "Ir a una piscina y hacerse la prueba de la insignia del caballito de mar",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Donar sangre",
+        "text": "Ir a donar sangre juntos",
+        "budget": "€"
+      },
+      {
+        "heading": "Libros favoritos",
+        "text": "Ve a una librería, busca tus libros favoritos de la infancia y preséntalos",
+        "budget": "€€"
+      },
+      {
+        "heading": "Paseo en barco",
+        "text": "Dar un romántico paseo en barco juntos",
+        "budget": "€€"
+      },
+      {
+        "heading": "Una buena acción",
+        "text": "Una buena acción común: Preguntar a una persona sin hogar qué quiere comer y beber y luego conseguírselo",
+        "budget": "€"
+      },
+      {
+        "heading": "Café Oscuro",
+        "text": "Id juntos a un café oscuro y poned a prueba vuestros sentidos",
+        "budget": "€€"
+      },
+      {
+        "heading": "Clase de baile",
+        "text": "Toma una clase de baile de prueba y sacudid las caderas juntos",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Clase de cóctel",
+        "text": "Toma una clase de cócteles juntos cerca de ti",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Upcycling",
+        "text": "Acércate a una tienda de segunda mano cercana y busca un proyecto conjunto de upcycling que puedas llevar a cabo",
+        "budget": "€"
+      },
+      {
+        "heading": "Geocache",
+        "text": "Ve de geocaching con tu pareja",
+        "budget": "€"
+      },
+      {
+        "heading": "karting",
+        "text": "Ir juntos a un circuito de karts y competir en una carrera",
+        "budget": "€€€"
+      },
+      {
+        "heading": "En la granja",
+        "text": "Ve a la granja más cercana y ofrécete a ayudar",
+        "budget": "€"
+      },
+      {
+        "heading": "Jabón propio",
+        "text": "Consigue un kit para hacer jabón y cread juntos el producto perfecto",
+        "budget": "€"
+      },
+      {
+        "heading": "Photobox Hopping",
+        "text": "Salta una caja de fotos y captura tus momentos",
+        "budget": "€€"
+      },
+      {
+        "heading": "Mis velas",
+        "text": "Consigue un kit para hacer velas y ponte creativo",
+        "budget": "€€"
+      },
+      {
+        "heading": "Graffiti",
+        "text": "Compra unos botes de spray y haz un graffiti en un lugar permitido",
+        "budget": "€€"
+      },
+      {
+        "heading": "Tendencia TikTok",
+        "text": "Elige una tendencia de TikTok y síguela",
+        "budget": "€"
+      },
+      {
+        "heading": "Visita al cementerio",
+        "text": "Visitar un cementerio local y ver las tumbas",
+        "budget": "€"
+      },
+      {
+        "heading": "Construye Lego",
+        "text": "Compra un set de Lego y móntalo",
+        "budget": "€€"
+      },
+      {
+        "heading": "subasta",
+        "text": "Visita una subasta y compra algo pequeño",
+        "budget": "€€"
+      },
+      {
+        "heading": "Senderismo",
+        "text": "Lleva a tu cita a una ruta de senderismo cercana y disfrutad juntos de la naturaleza. Conoce los diferentes árboles y habitantes del bosque",
+        "budget": "€"
+      },
+      {
+        "heading": "Mensaje en una botella",
+        "text": "Escribe un mensaje en una botella y tírala a un río, lago o mar",
+        "budget": "€"
+      },
+      {
+        "heading": "puzzle",
+        "text": "Compra un libro de puzles y poned a prueba vuestros conocimientos juntos",
+        "budget": "€€"
+      },
+      {
+        "heading": "puzzle",
+        "text": "Hacer un crucigrama juntos",
+        "budget": "€"
+      },
+      {
+        "heading": "montar en bici",
+        "text": "Dar un paseo en bici juntos",
+        "budget": "€"
+      },
+      {
+        "heading": "Selfies",
+        "text": "Ir a una tienda de electrónica y hacerse selfies en todos los expositores de móviles",
+        "budget": "€"
+      },
+      {
+        "heading": "conferencia",
+        "text": "Visitar juntos una conferencia sobre un tema interesante y después debatirlo",
+        "budget": "€"
+      },
+      {
+        "heading": "Tiro con arco",
+        "text": "Ir juntos al tiro con arco",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Un truco",
+        "text": "Intentar aprender un truco juntos (por ejemplo, malabares)",
+        "budget": "€"
+      },
+      {
+        "heading": "Visita a la cervecería",
+        "text": "Hacer juntos una excursión a una cervecería",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Juegos",
+        "text": "Aprender juntos un nuevo juego de cartas o de mesa",
+        "budget": "€"
+      },
+      {
+        "heading": "En la ciudad",
+        "text": "Visita diferentes lugares de la ciudad y escribe reseñas en Google sobre ellos",
+        "budget": "€"
+      },
+      {
+        "heading": "Batik",
+        "text": "Compra tinte para tela y camisas blancas y átalas juntas",
+        "budget": "€€€"
+      },
+      {
+        "heading": "henna",
+        "text": "Dibujarse mutuamente tatuajes de henna",
+        "budget": "€€"
+      },
+      {
+        "heading": "Receta del Chef",
+        "text": "Prueba la receta de un chef y luego escribe una reseña",
+        "budget": "€€"
+      },
+      {
+        "heading": "Nunca he...",
+        "text": "Juega al juego 'Nunca he...' y conócete mejor",
+        "budget": "€"
+      },
+      {
+        "heading": "deportes",
+        "text": "Aprender juntos un nuevo deporte",
+        "budget": "€€"
+      },
+      {
+        "heading": "Récord mundial",
+        "text": "Intentando batir un récord mundial",
+        "budget": "€€"
+      },
+      {
+        "encabezamiento": "Nuevo idioma",
+        "text": "Intentando aprender un nuevo idioma",
+        "budget": "€"
+      },
+      {
+        "heading": "flores",
+        "text": "Id a una floristería y elegid cada uno una flor. Luego justificad vuestra elección",
+        "budget": "€€"
+      },
+      {
+        "heading": "Helado propio",
+        "text": "Crea tu propio helado, según tus deseos",
+        "budget": "€€"
+      },
+      {
+        "heading": "Visita",
+        "text": "Recorrer juntos diferentes castillos",
+        "budget": "€"
+      },
+      {
+        "heading": "Evento deportivo",
+        "text": "Asistir juntos a un evento deportivo aleatorio (fútbol, fútbol americano, boxeo, hockey sobre hielo)",
+        "budget": "€€"
+      },
+      {
+        "heading": "Jardines de Botellas",
+        "text": "Ir a la ferretería y comprar materiales para jardines de botellas, que luego se llenan con ellos",
+        "budget": "€€"
+      },
+      {
+        "heading": "Origami",
+        "text": "Hacer un origami juntos",
+        "budget": "€"
+      },
+      {
+        "heading": "Curso de Caligrafía",
+        "text": "Tomad juntos una clase de caligrafía y escribíos una reseña de la cita utilizando vuestra nueva habilidad",
+        "budget": "€€"
+      },
+      {
+        "heading": "Camino de los Descalzos",
+        "text": "Ir juntos a un sendero de pies descalzos cerca de ti",
+        "budget": "€"
+      },
+      {
+        "heading": "Caminata por el arroyo",
+        "text": "Coged zapatos de agua y salid juntos a dar un paseo por el arroyo a ver hasta dónde sois capaces de llegar",
+        "budget": "€"
+      },
+      {
+        "heading": "Presentaciones",
+        "text": "Darse mutuamente un tema al azar para una presentación y presentárselo tras 15 minutos de preparación",
+        "presupuesto": "€"
+      },
+      {
+        "heading": "karaoke",
+        "text": "Juega una ronda de karaoke de PowerPoint",
+        "budget": "€€"
+      },
+      {
+        "heading": "Ceremonia del Cacao",
+        "text": "Unirse juntos a una ceremonia del cacao",
+        "budget": "€"
+      },
+      {
+        "heading": "Casino",
+        "text": "Ir juntos a un casino",
+        "budget": "€€€"
+      },
+      {
+        "heading": "Fortnite",
+        "text": "Forma equipo en una partida de Fortnite para dos personas e intenta quedar entre los 3 primeros",
+        "budget": "€"
+      },
+      {
+        "heading": "Meditación",
+        "text": "Consigue unas barritas de incienso, crea un ambiente tranquilo y cómodo y haced juntos una meditación guiada",
+        "budget": "€"
+      },
+      {
+        "heading": "feria",
+        "text": "Visita una feria actual cerca de ti e interactúa con los expositores",
+        "budget": "€€"
+      },
+      {
+        "heading": "Tour de compras",
+        "text": "Hacer un tour de compras juntos. Cada uno elige una pieza adecuada para el otro. Vamos a ver lo bien que satisfaces el gusto del otro",
+        "budget": "€€€"
+      },
+      {
+        "heading": "ciudad",
+        "text": "Ir juntos a lugares de la ciudad en los que nunca habéis estado",
+        "budget": "€"
+      },
+      {
+        "heading": "Mercado Semanal",
+        "text": "Ir a un mercado semanal cercano y comprar juntos fruta y verdura fresca y preparar un buen almuerzo con ellas",
+        "budget": "€€"
+      },
+      {
+        "heading": "Bar Hopping",
+        "text": "Ir de bar en bar, pidiendo una bebida o marca diferente cada vez. Puntúa cada bebida/marca del 1 al 10 y captúralo todo",
+        "budget": "€€"
+      },
+      {
+        "heading": "Discoteca silenciosa",
+        "text": "Ir juntos a una discoteca silenciosa",
+        "budget": "€€"
+      },
+      {
+        "heading": "Canción de rap",
+        "text": "Escribir juntos una canción de rap y luego grabarla con un ritmo usando una app de vuestra elección",
+        "budget": "€"
+      },
+      {
+        "heading": "Burbujas",
+        "text": "Haz pompas de jabón XXL con tu pareja y filma vuestro arte. Si es necesario, mira un tutorial de antemano",
+        "budget": "€"
+      },
+      {
+        "heading": "Bromas planas",
+        "text": "Haz el reto de los chistes planos y comprueba si tu humor coincide",
+        "budget": "€"
+      },
+      {
+        "heading": "Markramee",
+        "text": "Participar juntos en un taller de macramé",
+        "budget": "€€"
+      },
+      {
+        "heading": "Moderación",
+        "text": "Escribíos mutuamente una moderación en una app de teleprompter e intentad recitarla profesionalmente. Grabad los intentos de moderación de cada uno",
+        "budget": "€"
+      }
+    ]
+  }
+]
