@@ -10,31 +10,19 @@ function SelectListComponent() {
 
   const handleSelect = (value: string) => {
     selected.lang = value;
-    storeLanguage(value);
+    const globalStates = {
+      lang: value,
+    };
+    storeGlobalState(globalStates);
   };
 
-  const storeLanguage = async (lang: string) => {
+  const storeGlobalState = async (globalStates: object) => {
     try {
-      await AsyncStorage.setItem("language", lang);
+      await AsyncStorage.setItem("global_state", JSON.stringify(globalStates));
     } catch (error) {
       alert(error);
     }
   };
-  const retrieveLanguage = async () => {
-    try {
-      const storedLanguage = await AsyncStorage.getItem("language");
-      if (storedLanguage !== null) {
-        selected.lang = storedLanguage;
-      } else {
-        selected.lang = "0";
-      }
-    } catch (error) {
-      alert(error);
-    }
-  };
-  useEffect(() => {
-    retrieveLanguage();
-  }, []);
 
   const languages = [
     {key: "0", value: "Deutsch(German)"},

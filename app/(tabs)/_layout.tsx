@@ -26,11 +26,13 @@ export default function TabLayout() {
 
   const navigation = useNavigation();
 
-  const retrieveLanguage = async () => {
+  const retrieveGlobalState = async () => {
     try {
-      const storedLanguage = await AsyncStorage.getItem("language");
-      if (storedLanguage !== null) {
-        selected.lang = storedLanguage;
+      const stored = await AsyncStorage.getItem("global_state");
+
+      if (stored !== null) {
+        const globalStates = JSON.parse(stored);
+        selected.lang = globalStates.lang;
       } else {
         selected.lang = "0";
       }
@@ -39,7 +41,7 @@ export default function TabLayout() {
     }
   };
   useEffect(() => {
-    retrieveLanguage();
+    retrieveGlobalState();
   }, []);
 
   // fonts
