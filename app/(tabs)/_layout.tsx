@@ -1,5 +1,7 @@
 import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 import {Octicons} from "@expo/vector-icons";
+import {MaterialIcons} from "@expo/vector-icons";
+
 import {Drawer} from "expo-router/drawer";
 import React, {useEffect} from "react";
 import {StatusBar, View, StyleSheet, TouchableOpacity} from "react-native";
@@ -33,8 +35,10 @@ export default function TabLayout() {
       if (stored !== null) {
         const globalStates = JSON.parse(stored);
         selected.lang = globalStates.lang;
+        selected.favorites = globalStates.favorites;
       } else {
         selected.lang = "0";
+        selected.favorites = [];
       }
     } catch (error) {
       alert(error);
@@ -92,7 +96,8 @@ export default function TabLayout() {
         },
         headerLeft: () => (
           <TouchableOpacity
-            style={{marginLeft: 11, marginTop: 8}}
+            accessibilityHint="tap to open drawer"
+            style={{padding: 11}}
             onPress={() => navigation.dispatch(DrawerActions.openDrawer)}
           >
             <Octicons name="three-bars" size={30} />
@@ -123,6 +128,21 @@ export default function TabLayout() {
             <View style={styles.iconContainer}>
               <FontAwesome5
                 name="cogs"
+                color={color}
+                size={focused ? 24 : 20}
+              />
+            </View>
+          ),
+        }}
+      />
+      <Drawer.Screen
+        name="favorites"
+        options={{
+          title: data[snap.lang].favoriteHeaderText,
+          drawerIcon: ({focused, color}) => (
+            <View style={styles.iconContainer}>
+              <MaterialIcons
+                name="favorite"
                 color={color}
                 size={focused ? 24 : 20}
               />

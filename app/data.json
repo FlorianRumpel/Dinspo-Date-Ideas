@@ -2,6 +2,9 @@
   {
     "settingsHeaderText": "Einstellungen",
     "dateIdeaHeaderText": "Deine Date Idee",
+    "favoriteHeaderText": "Deine Favoriten",
+    "favoriteIconText": "Favorit",
+    "favoritePageText": "Deine lieblings Date Ideen",
     "generateButtonText": "Neue Date Idee generieren",
     "settingsLanguageText": "Sprache",
     "drawerNavText": "Navigation",
@@ -627,7 +630,10 @@
   {
     "settingsHeaderText": "Settings",
     "dateIdeaHeaderText": "Your Date Idea",
-    "generateButtonText": "Generate new Date Idea",
+    "favoriteHeaderText": "Your Favorites",
+    "favoriteIconText": "Favorit",
+    "favoritePageText": "Your favorite date ideas",
+    "generateButtonText": "Generate new date idea",
     "settingsLanguageText": "Language",
     "drawerNavText": "Navigation",
     "dateIdeasTexts": [
@@ -1252,6 +1258,9 @@
   {
     "settingsHeaderText": "Paramètres",
     "dateIdeaHeaderText": "Votre idée de date",
+    "favoriteHeaderText": "Vos favoris",
+    "favoriteIconText": "Favori",
+    "favoritePageText": "Vos idées de rendez-vous préférées",
     "generateButtonText": "Générer une nouvelle idée de date",
     "settingsLanguageText": "Langue",
     "drawerNavText": "Navigation",
@@ -1879,6 +1888,9 @@
   {
     "settingsHeaderText": "Ajustes",
     "dateIdeaHeaderText": "Tu idea de fecha",
+    "favoriteHeaderText": "Tus favoritos",
+    "favoriteIconText": "Favorito",
+    "favoritePageText": "Tus ideas para citas favoritas",
     "generateButtonText": "Generar nueva idea de fecha",
     "settingsLanguageText": "Idioma",
     "drawerNavText": "Navegación",

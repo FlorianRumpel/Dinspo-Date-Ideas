@@ -4,7 +4,7 @@ import {StyleSheet} from "react-native";
 import React, {useEffect} from "react";
 import {useSnapshot} from "valtio";
 
-import {selected} from "../globalState";
+import {selected, updateGlobalStateData} from "../globalState";
 function SelectListComponent() {
   const snap: any = useSnapshot(selected);
 
@@ -13,15 +13,7 @@ function SelectListComponent() {
     const globalStates = {
       lang: value,
     };
-    storeGlobalState(globalStates);
-  };
-
-  const storeGlobalState = async (globalStates: object) => {
-    try {
-      await AsyncStorage.setItem("global_state", JSON.stringify(globalStates));
-    } catch (error) {
-      alert(error);
-    }
+    updateGlobalStateData(globalStates);
   };
 
   const languages = [

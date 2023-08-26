@@ -3,10 +3,10 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 
 interface newData {
   lang?: string;
-  favorites?: string[];
+  favorites?: number[];
 }
 
-async function updateAsyncStorageData(updateData: newData) {
+async function updateGlobalStateData(updateData: newData) {
   const key: string = "global_state";
   try {
     const existingDataString = await AsyncStorage.getItem(key);
@@ -25,9 +25,15 @@ async function updateAsyncStorageData(updateData: newData) {
   }
 }
 
-const selected = proxy({
+type Selected = {
+  lang: string;
+  favorites: number[];
+  textNumHasBeenSet: boolean;
+};
+const selected: Selected = proxy({
   lang: "",
   favorites: [],
+  textNumHasBeenSet: false,
 });
 
-export {selected};
+export {selected, updateGlobalStateData};

@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
+import {AntDesign} from "@expo/vector-icons";
 import {StyleSheet, Text, TouchableOpacity, View} from "react-native";
-
 import {hyphenated} from "hyphenated";
 import de from "hyphenated-de";
 import en from "hyphenated-en-us";
@@ -8,22 +8,59 @@ import es from "hyphenated-es";
 import fr from "hyphenated-fr";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {useSnapshot} from "valtio";
+import {
+  RouteProp,
+  useRoute,
+  useNavigation,
+  useIsFocused,
+} from "@react-navigation/native";
 
 import {selected} from "../globalState";
 import Colors from "../constants/Colors";
 import data from "../data.json";
+import GenerateButton from "../components/GenerateButton";
+import FavoriteButton from "../components/FavoriteButton";
 
+type RootStackParamList = {
+  card: {number: number}; // Hier wird der Parametertyp für DetailScreen definiert
+};
 export default function Card() {
   const snap: any = useSnapshot(selected);
+  const route = useRoute<RouteProp<RootStackParamList, "card">>();
 
+  const screenFocused = useIsFocused();
   const dateIdeasData = data[snap.lang].dateIdeasTexts;
-
-  const [randomNumbers, setRandomNumbers] = useState<number[]>([]);
   const [textNum, setTextNum] = useState(
     Math.floor(Math.random() * dateIdeasData.length),
   );
-  const [disabled, setDisabled] = useState(false);
 
+  const [showStar, setShowStar] = useState(false);
+
+  useEffect(() => {
+    if (route.params !== undefined) {
+      const {number} = route.params;
+
+      if (!snap.textNumHasBeenSet) {
+        setTextNum(number);
+        selected.textNumHasBeenSet = true;
+        setShowStar(true);
+      } else if (!screenFocused) {
+        const randomIndex = Math.floor(Math.random() * dateIdeasData.length);
+        setTextNum(randomIndex);
+      } else if (!snap.textNumHasBeenSet) {
+        setShowStar(false);
+      }
+    }
+  }, [screenFocused, snap.textNumHasBeenSet]);
+
+  const [randomNumbers, setRandomNumbers] = useState<number[]>([]);
+
+  const [disabled, setDisabled] = useState(false);
+  const hypenatedLanguages = [de, en, fr, es];
+  const hyphenatedText = hyphenated(dateIdeasData[textNum].text, {
+    language: hypenatedLanguages[snap.lang],
+  });
+  const heading = dateIdeasData[textNum].heading;
   useEffect(() => {
     retrieveRandomNumbers();
   }, []);
@@ -72,14 +109,6 @@ export default function Card() {
     }
   };
 
-  const hypenatedLanguages = [de, en, fr, es];
-
-  const hyphenatedText = hyphenated(dateIdeasData[textNum].text, {
-    language: hypenatedLanguages[snap.lang],
-  });
-
-  const heading = dateIdeasData[textNum].heading;
-
   return (
     <View style={styles.container}>
       <Text style={[styles.heading]}>{heading}</Text>
@@ -92,26 +121,30 @@ export default function Card() {
         >
           {hyphenatedText}
         </Text>
-        <Text style={styles.budget}>{dateIdeasData[textNum].budget}</Text>
-      </View>
-      <TouchableOpacity
-        disabled={disabled}
-        onPress={() => generateRandomNumber()}
-        style={[
-          styles.buttonContainer,
-          disabled ? {backgroundColor: Colors.lightGray, opacity: 0.5} : {},
-        ]}
-      >
-        <View>
-          <Text
-            adjustsFontSizeToFit={true}
-            numberOfLines={2}
-            style={styles.buttonText}
-          >
-            {data[snap.lang].generateButtonText}
-          </Text>
+        <View style={styles.actionsContainer}>
+          <Text style={styles.budget}>{dateIdeasData[textNum].budget}</Text>
+          <View style={styles.favoriteContainer}>
+            {showStar ? (
+              <AntDesign name={"star"} size={33} color={"#fcba03"} />
+            ) : (
+              <FavoriteButton tapType="single" currentIdea={textNum} />
+            )}
+            <Text
+              style={{fontSize: 20, fontFamily: "Quick sand", color: "black"}}
+            >
+              {data[snap.lang].favoriteIconText}
+            </Text>
+          </View>
         </View>
-      </TouchableOpacity>
+      </View>
+
+      <GenerateButton
+        disabled={disabled}
+        onPress={() => {
+          generateRandomNumber();
+          setShowStar(false);
+        }}
+      />
     </View>
   );
 }
@@ -154,10 +187,17 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   budget: {
-    fontSize: 25,
-    textAlign: "right",
+    fontSize: 27,
     fontFamily: "Quick sand",
+  },
+  actionsContainer: {
+    flexDirection: "row-reverse",
+    justifyContent: "space-between",
+    alignItems: "center",
     marginTop: "auto",
+  },
+  favoriteContainer: {
+    alignItems: "center",
   },
   buttonContainer: {
     width: "90%",
@@ -173,12 +213,5 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.3,
     shadowRadius: 6,
     elevation: 5,
-  },
-
-  buttonText: {
-    fontSize: 20,
-    color: Colors.white,
-    textAlign: "center",
-    letterSpacing: 1,
   },
 });
