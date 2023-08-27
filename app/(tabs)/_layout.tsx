@@ -108,7 +108,7 @@ export default function TabLayout() {
       <Drawer.Screen
         name="card"
         options={{
-          title: titleTexts.dateIdeaHeaderText,
+          title: titleTexts.cardPage.dateIdeaDrawerText,
           drawerIcon: ({focused, color}) => (
             <View style={styles.iconContainer}>
               <FontAwesome5
@@ -123,7 +123,7 @@ export default function TabLayout() {
       <Drawer.Screen
         name="settings"
         options={{
-          title: titleTexts.settingsHeaderText,
+          title: titleTexts.settingsPage.settingsDrawerText,
           drawerIcon: ({focused, color}) => (
             <View style={styles.iconContainer}>
               <FontAwesome5
@@ -138,7 +138,7 @@ export default function TabLayout() {
       <Drawer.Screen
         name="favorites"
         options={{
-          title: data[snap.lang].favoriteHeaderText,
+          title: data[snap.lang].favoritePage.favoriteDrawerText,
           drawerIcon: ({focused, color}) => (
             <View style={styles.iconContainer}>
               <MaterialIcons

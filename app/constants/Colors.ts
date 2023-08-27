@@ -6,4 +6,6 @@ export default {
   overlayColor: "#000000cc",
   iconFocused: "#0080ff",
   icon: "#999999",
+  iconStar: "#fcba03",
+  viewButton: "purple",
 };

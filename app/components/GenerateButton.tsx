@@ -22,7 +22,7 @@ const GenerateButton = (props: any) => {
           numberOfLines={2}
           style={styles.buttonText}
         >
-          {data[snap.lang].generateButtonText}
+          {data[snap.lang].cardPage.generateButtonText}
         </Text>
       </View>
     </TouchableOpacity>

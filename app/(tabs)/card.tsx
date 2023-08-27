@@ -123,23 +123,24 @@ export default function Card() {
         </Text>
         <View style={styles.actionsContainer}>
           <Text style={styles.budget}>{dateIdeasData[textNum].budget}</Text>
-          <View style={styles.favoriteContainer}>
+          <View
+            style={[styles.favoriteContainer, showStar ? {opacity: 0.3} : {}]}
+          >
             {showStar ? (
-              <AntDesign name={"star"} size={33} color={"#fcba03"} />
+              <AntDesign name={"star"} size={33} color={Colors.iconStar} />
             ) : (
               <FavoriteButton tapType="single" currentIdea={textNum} />
             )}
             <Text
               style={{fontSize: 20, fontFamily: "Quick sand", color: "black"}}
             >
-              {data[snap.lang].favoriteIconText}
+              {data[snap.lang].cardPage.favoriteIconText}
             </Text>
           </View>
         </View>
       </View>
 
       <GenerateButton
-        disabled={disabled}
         onPress={() => {
           generateRandomNumber();
           setShowStar(false);

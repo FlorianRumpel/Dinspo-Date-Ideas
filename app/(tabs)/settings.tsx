@@ -10,7 +10,9 @@ function Settings() {
   const snap: any = useSnapshot(selected);
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>{data[snap.lang].settingsLanguageText}</Text>
+      <Text style={styles.title}>
+        {data[snap.lang].settingsPage.settingsLanguageText}
+      </Text>
       <SelectListComponent />
     </View>
   );

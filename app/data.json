@@ -1,13 +1,21 @@
 [
   {
-    "settingsHeaderText": "Einstellungen",
-    "dateIdeaHeaderText": "Deine Date Idee",
-    "favoriteHeaderText": "Deine Favoriten",
-    "favoriteIconText": "Favorit",
-    "favoritePageText": "Deine lieblings Date Ideen",
-    "generateButtonText": "Neue Date Idee generieren",
-    "settingsLanguageText": "Sprache",
+    "cardPage": {
+      "dateIdeaDrawerText": "Deine Date Idee",
+      "generateButtonText": "Neue Date Idee generieren",
+      "favoriteIconText": "Favorit"
+    },
+    "settingsPage": {
+      "settingsDrawerText": "Einstellungen",
+      "settingsLanguageText": "Sprache"
+    },
+    "favoritePage": {
+      "favoriteDrawerText": "Deine Favoriten",
+      "favoritePageText": "Deine lieblings Date Ideen"
+    },
+
     "drawerNavText": "Navigation",
+
     "dateIdeasTexts": [
       {
         "heading": "Malen",
@@ -628,13 +636,20 @@
   },
 
   {
-    "settingsHeaderText": "Settings",
-    "dateIdeaHeaderText": "Your Date Idea",
-    "favoriteHeaderText": "Your Favorites",
-    "favoriteIconText": "Favorit",
-    "favoritePageText": "Your favorite date ideas",
-    "generateButtonText": "Generate new date idea",
-    "settingsLanguageText": "Language",
+    "cardPage": {
+      "dateIdeaDrawerText": "Your Date Idea",
+      "generateButtonText": "Generate new date idea",
+      "favoriteIconText": "Favorit"
+    },
+    "settingsPage": {
+      "settingsDrawerText": "Settings",
+      "settingsLanguageText": "Language"
+    },
+    "favoritePage": {
+      "favoriteDrawerText": "Your Favorites",
+      "favoritePageText": "Your favorite date ideas"
+    },
+
     "drawerNavText": "Navigation",
     "dateIdeasTexts": [
       {
@@ -1256,13 +1271,20 @@
   },
 
   {
-    "settingsHeaderText": "Paramètres",
-    "dateIdeaHeaderText": "Votre idée de date",
-    "favoriteHeaderText": "Vos favoris",
-    "favoriteIconText": "Favori",
-    "favoritePageText": "Vos idées de rendez-vous préférées",
-    "generateButtonText": "Générer une nouvelle idée de date",
-    "settingsLanguageText": "Langue",
+    "cardPage": {
+      "dateIdeaDrawerText": "Votre idée de date",
+      "generateButtonText": "Générer une nouvelle idée de date",
+      "favoriteIconText": "Favori"
+    },
+    "settingsPage": {
+      "settingsDrawerText": "Paramètres",
+      "settingsLanguageText": "Langue"
+    },
+    "favoritePage": {
+      "favoriteDrawerText": "Vos favoris",
+      "favoritePageText": "Vos idées de rendez-vous préférées"
+    },
+
     "drawerNavText": "Navigation",
     "dateIdeasTexts": [
       {
@@ -1886,13 +1908,20 @@
   },
 
   {
-    "settingsHeaderText": "Ajustes",
-    "dateIdeaHeaderText": "Tu idea de fecha",
-    "favoriteHeaderText": "Tus favoritos",
-    "favoriteIconText": "Favorito",
-    "favoritePageText": "Tus ideas para citas favoritas",
-    "generateButtonText": "Generar nueva idea de fecha",
-    "settingsLanguageText": "Idioma",
+    "cardPage": {
+      "dateIdeaDrawerText": "Tu idea de fecha",
+      "generateButtonText": "Generar nueva idea de fecha",
+      "favoriteIconText": "Favorito"
+    },
+    "settingsPage": {
+      "settingsDrawerText": "Ajustes",
+      "settingsLanguageText": "Idioma"
+    },
+    "favoritePage": {
+      "favoriteDrawerText": "Tus favoritos",
+      "favoritePageText": "Tus ideas para citas favoritas"
+    },
+
     "drawerNavText": "Navegación",
     "dateIdeasTexts": [
       {

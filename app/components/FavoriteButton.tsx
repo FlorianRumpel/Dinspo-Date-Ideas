@@ -3,7 +3,7 @@ import React, {useState, useEffect} from "react";
 import {AntDesign} from "@expo/vector-icons";
 import {selected, updateGlobalStateData} from "../globalState";
 import {useSnapshot} from "valtio";
-
+import Colors from "../constants/Colors";
 type Props = {
   currentIdea: number;
   tapType: "single" | "double";
@@ -44,7 +44,7 @@ const FavoriteButton = (props: Props) => {
       >
         <AntDesign
           name={starFilled ? "star" : "staro"}
-          color={"#fcba03"}
+          color={Colors.iconStar}
           size={33}
         />
       </TouchableOpacity>
@@ -64,6 +64,7 @@ const FavoriteButton = (props: Props) => {
         selected.favorites = snap.favorites.filter(
           (item) => item !== props.currentIdea,
         );
+        updateGlobalStateData(selected);
       } else {
         setShowTextBox(true);
         Animated.timing(textBoxOpacity, {
@@ -85,7 +86,7 @@ const FavoriteButton = (props: Props) => {
         style={{padding: 15}}
         onPress={() => handleDoublePress()}
       >
-        <AntDesign name={"star"} color={"#fcba03"} size={33} />
+        <AntDesign name={"star"} color={Colors.iconStar} size={33} />
         {showTextBox && (
           <Animated.View
             style={[styles.textBoxContainer, {opacity: textBoxOpacity}]}
@@ -106,8 +107,8 @@ const FavoriteButton = (props: Props) => {
 const styles = StyleSheet.create({
   textBoxContainer: {
     position: "absolute",
-    bottom: 15,
-    left: -25,
+    bottom: 20,
+    left: -7,
     width: 100,
     backgroundColor: "#333",
     padding: 10,
