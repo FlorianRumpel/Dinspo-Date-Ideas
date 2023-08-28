@@ -1,6 +1,9 @@
-import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
-import {Octicons} from "@expo/vector-icons";
-import {MaterialIcons} from "@expo/vector-icons";
+import {
+  FontAwesome5,
+  Octicons,
+  MaterialIcons,
+  Entypo,
+} from "@expo/vector-icons/";
 
 import {Drawer} from "expo-router/drawer";
 import React, {useEffect} from "react";
@@ -146,6 +149,17 @@ export default function TabLayout() {
                 color={color}
                 size={focused ? 24 : 20}
               />
+            </View>
+          ),
+        }}
+      />
+      <Drawer.Screen
+        name="share"
+        options={{
+          title: "Teile deine Erfahrung",
+          drawerIcon: ({focused, color}) => (
+            <View style={styles.iconContainer}>
+              <Entypo name="export" color={color} size={focused ? 24 : 20} />
             </View>
           ),
         }}

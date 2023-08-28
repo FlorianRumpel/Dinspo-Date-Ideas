@@ -13,17 +13,31 @@
       "favoriteDrawerText": "Deine Favoriten",
       "favoritePageText": "Deine lieblings Date Ideen"
     },
+    "sharePage": {
+      "pdfExperienceText": "Deine Erfahrung",
+
+      "shareDrawerText": "Teile deine Erfahrung",
+      "dropdownHeaderText": "Wähle aus deinen Favoriten",
+      "dropdownPlaceholderText": "Deine lieblings Date Idee",
+      "dropdownSearchPlaceholderText": "Idee suchen",
+
+      "textfieldHeaderText": "Schreibe über deine Erfahrung",
+      "textfieldPlaceholder": "Schreibe einen Text...",
+
+      "imageButton": "Bild wählen",
+      "PdfButton": "Als PDF teilen"
+    },
 
     "drawerNavText": "Navigation",
 
     "dateIdeasTexts": [
       {
-        "heading": "Malen",
+        "heading": "Malen (1)",
         "text": "Kaufe zwei kleine Leinwände, Acrylfarbe und Pinsel und lade dein Date zu dem Ort deiner Wahl ein. Nun malt ihr ein Bild für den jeweils anderen. Stellt euch dabei Fragen und baut persönliche Komponenten mit ein.",
         "budget": "€€"
       },
       {
-        "heading": "Malen",
+        "heading": "Malen (2)",
         "text": "Kaufe eine kleine Leinwand, Acrylfarbe und Pinsel und lade dein Date zu dem Ort deiner Wahl ein. Nun stellt euch einen Timer auf je 3 Minuten und wechselt euch mit dem Malen ab. Jeder sollte mindestens 5 mal dran sein. Am Ende entsteht ein gemeinsames Kunstwerk.",
         "budget": "€€"
       },
@@ -649,16 +663,29 @@
       "favoriteDrawerText": "Your Favorites",
       "favoritePageText": "Your favorite date ideas"
     },
+    "sharePage": {
+      "pdfExperienceText": "Your experience",
 
+      "shareDrawerText": "Share your experience",
+      "dropdownHeaderText": "Choose from your favorites",
+      "dropdownPlaceholderText": "Your favorite date idea",
+      "dropdownSearchPlaceholderText": "Search for an idea",
+
+      "textfieldHeaderText": "Write about your experience",
+      "textfieldPlaceholder": "Write a text...",
+
+      "imageButton": "Choose image",
+      "PdfButton": "Share as PDF"
+    },
     "drawerNavText": "Navigation",
     "dateIdeasTexts": [
       {
-        "heading": "Paint",
+        "heading": "Paint (1)",
         "text": "Buy two small canvases, acrylic paint and brushes and invite your date to the location of your choice. Now you paint a picture for each other. Ask yourself questions and include personal components.",
         "budget": "€€"
       },
       {
-        "heading": "Paint",
+        "heading": "Pain (2)",
         "text": "Buy a small canvas, acrylic paint and brushes and invite your date to the location of your choice. Now set a timer for 3 minutes each and take turns painting. Everyone should have at least 5 turns. Am In the end, a joint work of art is created.",
         "budget": "€€"
       },
@@ -1284,16 +1311,29 @@
       "favoriteDrawerText": "Vos favoris",
       "favoritePageText": "Vos idées de rendez-vous préférées"
     },
+    "sharePage": {
+      "pdfExperienceText": "Ton expérience",
 
+      "shareDrawerText": "Partagez votre expérience",
+      "dropdownHeaderText": "Choisissez parmi vos favoris",
+      "dropdownPlaceholderText": "Votre idée de rendez-vous préférée",
+      "dropdownSearchPlaceholderText": "Rechercher une idée",
+
+      "textfieldHeaderText": "Écrivez sur votre expérience",
+      "textfieldPlaceholder": "Écrire un texte...",
+
+      "imageButton": "Choisir une image",
+      "PdfButton": "Partager au format PDF"
+    },
     "drawerNavText": "Navigation",
     "dateIdeasTexts": [
       {
-        "heading": "Peindre",
+        "heading": "Peindre (1)",
         "text": "Achetez deux petites toiles, de la peinture acrylique et des pinceaux et invitez votre rendez-vous à l'endroit de votre choix. Vous allez maintenant peindre un tableau pour l'autre. Posez-vous des questions et intégrez des composantes personnelles",
         "budget": "€€"
       },
       {
-        "heading": "Peindre",
+        "heading": "Peindre (2)",
         "text": "Achetez une petite toile, de la peinture acrylique et des pinceaux et invitez votre partenaire à l'endroit de votre choix. Maintenant, réglez une minuterie à 3 minutes chacun et peignez à tour de rôle. Chacun devrait s'y prendre au moins cinq fois. A la fin, une œuvre d'art commune sera créée",
         "budget": "€€"
       },
@@ -1921,18 +1961,31 @@
       "favoriteDrawerText": "Tus favoritos",
       "favoritePageText": "Tus ideas para citas favoritas"
     },
+    "sharePage": {
+      "pdfExperienceText": "Tu experiencia",
 
+      "shareDrawerText": "Comparte tu experiencia",
+      "dropdownHeaderText": "Elige entre tus favoritos",
+      "dropdownPlaceholderText": "Tu idea favorita para una cita",
+      "dropdownSearchPlaceholderText": "Buscar una idea",
+
+      "textfieldHeaderText": "Escribe sobre tu experiencia",
+      "textfieldPlaceholder": "Escribe un texto...",
+
+      "imageButton": "Elegir imagen",
+      "PdfButton": "Compartir como PDF"
+    },
     "drawerNavText": "Navegación",
     "dateIdeasTexts": [
       {
-        "heading": "Paint",
+        "heading": "pintar (1)",
         "text": "Compra dos lienzos pequeños, pintura acrílica y pinceles e invita a tu cita al lugar que elijáis. Pintad un cuadro el uno para el otro. Haceos preguntas e incluid componentes personales",
-        "presupuesto": "€€"
+        "budget": "€€"
       },
       {
-        "heading": "pintura",
+        "heading": "pintar (2)",
         "text": "Compra un pequeño lienzo, pintura acrílica y pinceles e invita a tu cita al lugar que prefieras. Pon un cronómetro para 3 minutos cada uno y pinta por turnos. Cada uno debería tener al menos 5 turnos. Am Al final, se crea una obra de arte conjunta",
-        "presupuesto": "€€"
+        "budget": "€€"
       },
       {
         "heading": "Campo de fresas",
@@ -2167,7 +2220,7 @@
       {
         "heading": "Cocina a ciegas",
         "text": "Cocinan juntos. Sin embargo, uno debe prepararlo todo con los ojos vendados. El otro no puede hacer nada, salvo guiar al ciego",
-        "presupuesto": "€€"
+        "budget": "€€"
       },
       {
         "heading": "Tu infancia",
@@ -2405,7 +2458,7 @@
         "budget": "€€"
       },
       {
-        "encabezamiento": "Nuevo idioma",
+        "heading": "Nuevo idioma",
         "text": "Intentando aprender un nuevo idioma",
         "budget": "€"
       },
@@ -2457,7 +2510,7 @@
       {
         "heading": "Presentaciones",
         "text": "Darse mutuamente un tema al azar para una presentación y presentárselo tras 15 minutos de preparación",
-        "presupuesto": "€"
+        "budget": "€"
       },
       {
         "heading": "karaoke",
