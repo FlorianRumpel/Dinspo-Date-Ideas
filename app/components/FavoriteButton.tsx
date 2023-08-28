@@ -64,6 +64,7 @@ const FavoriteButton = (props: Props) => {
         selected.favorites = snap.favorites.filter(
           (item) => item !== props.currentIdea,
         );
+
         updateGlobalStateData(selected);
       } else {
         setShowTextBox(true);

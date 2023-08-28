@@ -24,6 +24,7 @@ import FavoriteButton from "../components/FavoriteButton";
 type RootStackParamList = {
   card: {number: number}; // Hier wird der Parametertyp für DetailScreen definiert
 };
+
 export default function Card() {
   const snap: any = useSnapshot(selected);
   const route = useRoute<RouteProp<RootStackParamList, "card">>();
@@ -33,10 +34,15 @@ export default function Card() {
   const [textNum, setTextNum] = useState(
     Math.floor(Math.random() * dateIdeasData.length),
   );
+  const [randomNumbers, setRandomNumbers] = useState<number[]>([]);
+  const [disabled, setDisabled] = useState(false);
 
   const [showStar, setShowStar] = useState(false);
 
   useEffect(() => {
+    if (snap.favorites.length == 0) {
+      setShowStar(false);
+    }
     if (route.params !== undefined) {
       const {number} = route.params;
 
@@ -53,9 +59,6 @@ export default function Card() {
     }
   }, [screenFocused, snap.textNumHasBeenSet]);
 
-  const [randomNumbers, setRandomNumbers] = useState<number[]>([]);
-
-  const [disabled, setDisabled] = useState(false);
   const hypenatedLanguages = [de, en, fr, es];
   const hyphenatedText = hyphenated(dateIdeasData[textNum].text, {
     language: hypenatedLanguages[snap.lang],
@@ -141,6 +144,7 @@ export default function Card() {
       </View>
 
       <GenerateButton
+        disabled={disabled}
         onPress={() => {
           generateRandomNumber();
           setShowStar(false);

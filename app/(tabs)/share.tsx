@@ -24,6 +24,7 @@ import * as Print from "expo-print";
 import * as Sharing from "expo-sharing";
 import * as FileSystem from "expo-file-system";
 import * as ImagePicker from "expo-image-picker";
+import {useIsFocused} from "@react-navigation/native";
 
 import {Asset} from "expo-asset";
 import {manipulateAsync} from "expo-image-manipulator";
@@ -33,6 +34,7 @@ const SharePage = () => {
   const [text, setText] = useState("");
   const [imageUri, setImage] = useState<null | string>(null);
   const disabled = !text || !selectedOption || !imageUri;
+  const isFocused = useIsFocused();
 
   const snap: any = useSnapshot(selected);
 
@@ -572,6 +574,7 @@ const SharePage = () => {
             setSelected={(val: number) => {
               setSelectedOption(val);
             }}
+            notFoundText={data[snap.lang].favoritePage.noFavoritText}
             boxStyles={{width: 350}}
             inputStyles={{fontFamily: "Quick sand"}}
             dropdownTextStyles={{
@@ -586,10 +589,11 @@ const SharePage = () => {
             }}
             closeicon={<AntDesign name="close" size={25} />}
             arrowicon={<MaterialIcons name="keyboard-arrow-down" size={25} />}
+            dropdownShown={!isFocused}
           />
         </View>
 
-        <View style={{marginTop: 20}}>
+        <View style={{marginTop: 20, width: "85%"}}>
           <Text style={styles.headingText}>
             {sharePageTexts.textfieldHeaderText}
           </Text>
@@ -663,12 +667,12 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
   },
   textArea: {
-    width: 350,
     height: 300,
     borderColor: "#000",
     borderWidth: 1,
     padding: 10,
     fontSize: 16,
+    borderRadius: 10,
   },
   shareButton: {
     padding: 10,

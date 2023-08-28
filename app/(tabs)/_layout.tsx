@@ -156,7 +156,7 @@ export default function TabLayout() {
       <Drawer.Screen
         name="share"
         options={{
-          title: "Teile deine Erfahrung",
+          title: data[snap.lang].sharePage.shareDrawerText,
           drawerIcon: ({focused, color}) => (
             <View style={styles.iconContainer}>
               <Entypo name="export" color={color} size={focused ? 24 : 20} />

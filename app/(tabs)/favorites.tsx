@@ -10,24 +10,37 @@ import Colors from "../constants/Colors";
 const Favorites = () => {
   const snap: any = useSnapshot(selected);
 
+  const texts = data[snap.lang].favoritePage;
+
   return (
     <ScrollView style={styles.container}>
       <View style={{paddingBottom: 20}}>
         <Text style={styles.title}>
-          {data[snap.lang].favoritePage.favoritePageText}
+          {snap.favorites.length !== 0
+            ? data[snap.lang].favoritePage.favoritePageText
+            : data[snap.lang].favoritePage.noFavoritText}
         </Text>
         <View style={styles.helpContainer}>
-          <Text style={styles.helpContainer.text}>Tap star to delete</Text>
-          <Text style={styles.helpContainer.text}>Click to view idea</Text>
+          {snap.favorites.length !== 0 && (
+            <>
+              <Text style={styles.helpContainer.text}>{texts.deleteText}</Text>
+              <Text style={styles.helpContainer.text}>{texts.viewText}</Text>
+            </>
+          )}
         </View>
         {snap.favorites.map((item: number, index: any) => {
           return (
             <View key={index}>
               <View style={styles.itemContainer}>
-                <FavoriteButton tapType="double" currentIdea={item} />
+                <View style={{marginLeft: 10}}>
+                  <FavoriteButton tapType="double" currentIdea={item} />
+                </View>
 
-                <Text style={styles.item}>
-                  {data[snap.lang].dateIdeasTexts[item].heading}
+                <Text adjustsFontSizeToFit={true} style={styles.item}>
+                  {data[snap.lang].dateIdeasTexts[item].heading
+                    .charAt(0)
+                    .toLocaleUpperCase() +
+                    data[snap.lang].dateIdeasTexts[item].heading.slice(1)}
                 </Text>
                 <TouchableOpacity
                   onPress={() => {
@@ -45,7 +58,7 @@ const Favorites = () => {
                     }}
                     style={styles.buttonText}
                   >
-                    View
+                    {texts.button}
                   </Link>
                 </TouchableOpacity>
               </View>
@@ -76,7 +89,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     text: {
       fontFamily: "Quick sand",
-      fontSize: 15,
+      fontSize: 16,
       // textDecorationLine: "underline",
     },
   },

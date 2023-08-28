@@ -11,7 +11,12 @@
     },
     "favoritePage": {
       "favoriteDrawerText": "Deine Favoriten",
-      "favoritePageText": "Deine lieblings Date Ideen"
+      "favoritePageText": "Deine lieblings Date Ideen",
+      "noFavoritText": "Du hast noch keine Favoriten",
+
+      "deleteText": "Clicken zum löschen",
+      "viewText": "Idee ansehen",
+      "button": "Sehen"
     },
     "sharePage": {
       "pdfExperienceText": "Deine Erfahrung",
@@ -661,7 +666,12 @@
     },
     "favoritePage": {
       "favoriteDrawerText": "Your Favorites",
-      "favoritePageText": "Your favorite date ideas"
+      "favoritePageText": "Your favorite date ideas",
+      "noFavoritText": "You don't have favorites yet",
+
+      "deleteText": "Click to delete",
+      "viewText": "View Idea",
+      "button": "View"
     },
     "sharePage": {
       "pdfExperienceText": "Your experience",
@@ -685,7 +695,7 @@
         "budget": "€€"
       },
       {
-        "heading": "Pain (2)",
+        "heading": "Paint (2)",
         "text": "Buy a small canvas, acrylic paint and brushes and invite your date to the location of your choice. Now set a timer for 3 minutes each and take turns painting. Everyone should have at least 5 turns. Am In the end, a joint work of art is created.",
         "budget": "€€"
       },
@@ -1309,7 +1319,12 @@
     },
     "favoritePage": {
       "favoriteDrawerText": "Vos favoris",
-      "favoritePageText": "Vos idées de rendez-vous préférées"
+      "favoritePageText": "Vos idées de rendez-vous préférées",
+      "noFavoritText": "Vous n'avez pas encore de favoris",
+
+      "deleteText": "Cliquez pour supprimer",
+      "viewText": "Afficher l'idée",
+      "button": "Afficher"
     },
     "sharePage": {
       "pdfExperienceText": "Ton expérience",
@@ -1959,7 +1974,12 @@
     },
     "favoritePage": {
       "favoriteDrawerText": "Tus favoritos",
-      "favoritePageText": "Tus ideas para citas favoritas"
+      "favoritePageText": "Tus ideas para citas favoritas",
+
+      "noFavoritText": "Aún no tienes ningún favorito",
+      "deleteText": "Haga clic para eliminar",
+      "viewText": "Ver idea",
+      "button": "Ver"
     },
     "sharePage": {
       "pdfExperienceText": "Tu experiencia",
