@@ -21,49 +21,27 @@ import data from "../data.json";
 import GenerateButton from "../components/GenerateButton";
 import FavoriteButton from "../components/FavoriteButton";
 
-type RootStackParamList = {
-  card: {number: number}; // Hier wird der Parametertyp für DetailScreen definiert
-};
-
 export default function Card() {
   const snap: any = useSnapshot(selected);
-  const route = useRoute<RouteProp<RootStackParamList, "card">>();
-
-  const screenFocused = useIsFocused();
   const dateIdeasData = data[snap.lang].dateIdeasTexts;
   const [textNum, setTextNum] = useState(
     Math.floor(Math.random() * dateIdeasData.length),
   );
   const [randomNumbers, setRandomNumbers] = useState<number[]>([]);
   const [disabled, setDisabled] = useState(false);
-
-  const [showStar, setShowStar] = useState(false);
-
-  useEffect(() => {
-    if (snap.favorites.length == 0) {
-      setShowStar(false);
-    }
-    if (route.params !== undefined) {
-      const {number} = route.params;
-
-      if (!snap.textNumHasBeenSet) {
-        setTextNum(number);
-        selected.textNumHasBeenSet = true;
-        setShowStar(true);
-      } else if (!screenFocused) {
-        const randomIndex = Math.floor(Math.random() * dateIdeasData.length);
-        setTextNum(randomIndex);
-      } else if (!snap.textNumHasBeenSet) {
-        setShowStar(false);
-      }
-    }
-  }, [screenFocused, snap.textNumHasBeenSet]);
-
   const hypenatedLanguages = [de, en, fr, es];
   const hyphenatedText = hyphenated(dateIdeasData[textNum].text, {
     language: hypenatedLanguages[snap.lang],
   });
   const heading = dateIdeasData[textNum].heading;
+
+  useEffect(() => {
+    if (snap.currentIdea) {
+      setTextNum(snap.currentIdea);
+      selected.currentIdea = undefined;
+    }
+  }, [snap.currentIdea]);
+
   useEffect(() => {
     retrieveRandomNumbers();
   }, []);
@@ -126,14 +104,8 @@ export default function Card() {
         </Text>
         <View style={styles.actionsContainer}>
           <Text style={styles.budget}>{dateIdeasData[textNum].budget}</Text>
-          <View
-            style={[styles.favoriteContainer, showStar ? {opacity: 0.3} : {}]}
-          >
-            {showStar ? (
-              <AntDesign name={"star"} size={33} color={Colors.iconStar} />
-            ) : (
-              <FavoriteButton tapType="single" currentIdea={textNum} />
-            )}
+          <View style={[styles.favoriteContainer]}>
+            <FavoriteButton tapType="single" currentIdea={textNum} />
             <Text
               style={{fontSize: 20, fontFamily: "Quick sand", color: "black"}}
             >
@@ -145,10 +117,7 @@ export default function Card() {
 
       <GenerateButton
         disabled={disabled}
-        onPress={() => {
-          generateRandomNumber();
-          setShowStar(false);
-        }}
+        onPress={() => generateRandomNumber()}
       />
     </View>
   );

@@ -44,20 +44,11 @@ const Favorites = () => {
                 </Text>
                 <TouchableOpacity
                   onPress={() => {
-                    selected.textNumHasBeenSet = false;
+                    selected.currentIdea = item;
                   }}
                   style={styles.buttonContainer}
                 >
-                  <Link
-                    href={{
-                      pathname: "/(tabs)/card",
-
-                      params: {
-                        number: item,
-                      },
-                    }}
-                    style={styles.buttonText}
-                  >
+                  <Link href="/(tabs)/card" style={styles.buttonText}>
                     {texts.button}
                   </Link>
                 </TouchableOpacity>

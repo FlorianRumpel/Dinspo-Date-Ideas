@@ -28,12 +28,12 @@ async function updateGlobalStateData(updateData: newData) {
 type Selected = {
   lang: string;
   favorites: number[];
-  textNumHasBeenSet: boolean;
+  currentIdea: unknown;
 };
 const selected: Selected = proxy({
   lang: "",
   favorites: [],
-  textNumHasBeenSet: false,
+  currentIdea: undefined,
 });
 
 export {selected, updateGlobalStateData};
