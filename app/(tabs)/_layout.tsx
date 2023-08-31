@@ -53,7 +53,11 @@ export default function TabLayout() {
 
   // fonts
   const [fontsLoaded] = useFonts({
-    "Quick sand": require("../assets/fonts/Quicksand.ttf"),
+    "Quick-Sand": require("../assets/fonts/Quicksand-Light.ttf"),
+    "Quick-Sand-Regular": require("../assets/fonts/Quicksand-Regular.ttf"),
+    "Quick-Sand-Medium": require("../assets/fonts/Quicksand-Medium.ttf"),
+    "Quick-Sand-SemiBold": require("../assets/fonts/Quicksand-SemiBold.ttf"),
+    "Quick-Sand-Bold": require("../assets/fonts/Quicksand-Bold.ttf"),
   });
 
   useEffect(() => {
@@ -74,6 +78,10 @@ export default function TabLayout() {
       drawerContent={(props) => <CustomDrawer {...props} />}
       initialRouteName="card"
       screenOptions={{
+        drawerLabelStyle: {
+          fontFamily: "Quick-Sand-Regular",
+          marginLeft: -25,
+        },
         swipeEdgeWidth: 250,
         headerStatusBarHeight: 0,
         headerStyle: {
@@ -85,7 +93,7 @@ export default function TabLayout() {
           alignItems: "center",
         },
         headerTitleStyle: {
-          fontFamily: "Quick sand",
+          fontFamily: "Quick-Sand",
           fontSize: 24.5,
           textDecorationLine: "underline",
           textShadowOffset: {width: 2, height: 2},
@@ -100,7 +108,7 @@ export default function TabLayout() {
         headerLeft: () => (
           <TouchableOpacity
             accessibilityHint="tap to open drawer"
-            style={{padding: 11}}
+            style={{padding: 11, paddingTop: 17}}
             onPress={() => navigation.dispatch(DrawerActions.openDrawer)}
           >
             <Octicons name="three-bars" size={30} />
@@ -132,7 +140,7 @@ export default function TabLayout() {
               <FontAwesome5
                 name="cogs"
                 color={color}
-                size={focused ? 24 : 20}
+                size={focused ? 22 : 20}
               />
             </View>
           ),
@@ -169,8 +177,8 @@ export default function TabLayout() {
 }
 const styles = StyleSheet.create({
   iconContainer: {
-    width: 30,
-    height: 30,
+    width: 29,
+    height: 29,
     justifyContent: "center",
     alignItems: "center",
   },

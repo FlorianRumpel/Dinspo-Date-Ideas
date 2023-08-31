@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react";
-import {AntDesign} from "@expo/vector-icons";
-import {StyleSheet, Text, TouchableOpacity, View} from "react-native";
+import {StyleSheet, Text, View} from "react-native";
 import {hyphenated} from "hyphenated";
 import de from "hyphenated-de";
 import en from "hyphenated-en-us";
@@ -8,18 +7,12 @@ import es from "hyphenated-es";
 import fr from "hyphenated-fr";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {useSnapshot} from "valtio";
-import {
-  RouteProp,
-  useRoute,
-  useNavigation,
-  useIsFocused,
-} from "@react-navigation/native";
 
 import {selected} from "../globalState";
 import Colors from "../constants/Colors";
 import data from "../data.json";
-import GenerateButton from "../components/GenerateButton";
-import FavoriteButton from "../components/FavoriteButton";
+import GenerateButton from "../components/cardPage/GenerateButton";
+import FavoriteButton from "../components/favoritePage/FavoriteButton";
 
 export default function Card() {
   const snap: any = useSnapshot(selected);
@@ -104,14 +97,8 @@ export default function Card() {
         </Text>
         <View style={styles.actionsContainer}>
           <Text style={styles.budget}>{dateIdeasData[textNum].budget}</Text>
-          <View style={[styles.favoriteContainer]}>
-            <FavoriteButton tapType="single" currentIdea={textNum} />
-            <Text
-              style={{fontSize: 20, fontFamily: "Quick sand", color: "black"}}
-            >
-              {data[snap.lang].cardPage.favoriteIconText}
-            </Text>
-          </View>
+
+          <FavoriteButton tapType="single" currentIdea={textNum} />
         </View>
       </View>
 
@@ -132,7 +119,7 @@ const styles = StyleSheet.create({
     position: "relative",
   },
   heading: {
-    fontFamily: "Quick sand",
+    fontFamily: "Quick-Sand",
     fontSize: 24,
     textTransform: "capitalize",
     textAlign: "center",
@@ -143,7 +130,7 @@ const styles = StyleSheet.create({
     minHeight: "70%",
     backgroundColor: Colors.white,
     borderRadius: 20,
-    fontFamily: "Quick sand",
+    fontFamily: "Quick-Sand",
     padding: 10,
     shadowColor: "#000",
     shadowOffset: {
@@ -157,12 +144,12 @@ const styles = StyleSheet.create({
 
   dateIdea: {
     fontSize: 22,
-    fontFamily: "Quick sand",
+    fontFamily: "Quick-Sand",
     textAlign: "center",
   },
   budget: {
     fontSize: 27,
-    fontFamily: "Quick sand",
+    fontFamily: "Quick-Sand",
   },
   actionsContainer: {
     flexDirection: "row-reverse",
@@ -170,9 +157,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginTop: "auto",
   },
-  favoriteContainer: {
-    alignItems: "center",
-  },
+
   buttonContainer: {
     width: "90%",
     marginTop: 20,

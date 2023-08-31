@@ -11,11 +11,12 @@
     },
     "favoritePage": {
       "favoriteDrawerText": "Deine Favoriten",
-      "favoritePageText": "Deine lieblings Date Ideen",
+      "favoritePageText": "Deine Lieblings Date Ideen",
       "noFavoritText": "Du hast noch keine Favoriten",
 
-      "deleteText": "Clicken zum löschen",
-      "viewText": "Idee ansehen",
+      "deleteText": "Stern doppelt klicken zum Löschen",
+      "doubleTapText": "Doppelt klicken zum löschen",
+
       "button": "Sehen"
     },
     "sharePage": {
@@ -23,7 +24,7 @@
 
       "shareDrawerText": "Teile deine Erfahrung",
       "dropdownHeaderText": "Wähle aus deinen Favoriten",
-      "dropdownPlaceholderText": "Deine lieblings Date Idee",
+      "dropdownPlaceholderText": "Deine Lieblings Date Idee",
       "dropdownSearchPlaceholderText": "Idee suchen",
 
       "textfieldHeaderText": "Schreibe über deine Erfahrung",
@@ -43,7 +44,7 @@
       },
       {
         "heading": "Malen (2)",
-        "text": "Kaufe eine kleine Leinwand, Acrylfarbe und Pinsel und lade dein Date zu dem Ort deiner Wahl ein. Nun stellt euch einen Timer auf je 3 Minuten und wechselt euch mit dem Malen ab. Jeder sollte mindestens 5 mal dran sein. Am Ende entsteht ein gemeinsames Kunstwerk.",
+        "text": "Kaufe eine kleine Leinwand, Acrylfarbe und Pinsel und lade dein Date zu dem Ort deiner Wahl ein. Nun stellt euch einen Timer auf je 3 Minuten und wechselt euch mit dem Malen ab. Jeder sollte mindestens 5-mal dran sein. Am Ende entsteht ein gemeinsames Kunstwerk.",
         "budget": "€€"
       },
       {
@@ -53,12 +54,12 @@
       },
       {
         "heading": "Picknick",
-        "text": "Pack eine Decke, eine flasche Sekt und ein paar Snacks ein. Fahre mit deinem Date zu einem Fluss oder einem See und verbringt einen Abend am Wasser",
+        "text": "Pack eine Decke, eine Flasche Sekt und ein paar Snacks ein. Fahre mit deinem Date zu einem Fluss oder einem See und verbringt einen Abend am Wasser",
         "budget": "€€"
       },
       {
         "heading": "Kunstaustellung",
-        "text": "Informiere dich zu aktuellen ausstellungen in deiner gegend. Besucht gemeinsam eine Kunstausstellung und sprecht darüber, was euch gefallen hat.",
+        "text": "Informiere dich zu aktuellen Ausstellungen in deiner Gegend. Besucht gemeinsam eine Kunstausstellung und sprecht darüber, was euch gefallen hat.",
         "budget": "€€€"
       },
       {
@@ -68,12 +69,12 @@
       },
       {
         "heading": "Barista-Kurs",
-        "text": "Meldet euch für einen Barista-Krs an und lernt neues über Kaffee und wie man schöne Formen in den Kaffee gießt.",
+        "text": "Meldet euch für einen Barista-Kurs an und lernt neues über Kaffee und wie man schöne Formen in den Kaffee gießt.",
         "budget": "€€€"
       },
       {
         "heading": "Poetry Slam",
-        "text": "Besucht einen Poetry Slam in eurer gegend und sprecht darüber, welcher euch am besten gefallen hat und warum.",
+        "text": "Besucht einen Poetry Slam in eurer Gegend und sprecht darüber, welcher euch am besten gefallen hat und warum.",
         "budget": "€€"
       },
       {
@@ -83,7 +84,7 @@
       },
       {
         "heading": "Wein-tasting",
-        "text": "Suche einen Winzer in deiner nähe und macht gemeinsam ein Wein-tasting",
+        "text": "Suche einen Winzer in deiner Nähe und macht gemeinsam ein Wein-tasting",
         "budget": "€€"
       },
       {
@@ -117,7 +118,7 @@
         "budget": "€€"
       },
       {
-        "heading": "Stadtrundfart",
+        "heading": "Stadtrundfahrt",
         "text": "Macht eine Stadtrundfahrt in eurer oder der nächstgelegenen Stadt",
         "budget": "€€"
       },
@@ -143,7 +144,7 @@
       },
       {
         "heading": "Dart",
-        "text": "Sucht euch eine Kneipe in der nähe und spielt ein paar runden Darts gegeneinander.",
+        "text": "Sucht euch eine Kneipe in der Nähe und spielt ein paar runden Darts gegeneinander.",
         "budget": "€"
       },
       {
@@ -153,21 +154,21 @@
       },
       {
         "heading": "Jazz-Konzert",
-        "text": "Besucht ein entspanntes Jazz-Konzert in der nähe.",
+        "text": "Besucht ein entspanntes Jazz-Konzert in der Nähe.",
         "budget": "€€€"
       },
       {
         "heading": "Flohmarkt",
-        "text": "Schlendert gemeinsam über einen Flohmarkt in der nähe.",
+        "text": "Schlendert gemeinsam über einen Flohmarkt in der Nähe.",
         "budget": "€"
       },
       {
         "heading": "Pilze sammeln",
-        "text": "Informier dich über die pilze der Saison und fahre mit deinem date in den wald um welche zu sammeln",
+        "text": "Informier dich über die Pilze der Saison und fahre mit deinem date in den Wald, um welche zu sammeln",
         "budget": "€"
       },
       {
-        "heading": "Escape-room",
+        "heading": "Escape-Room",
         "text": "Geht in einen Escape-Room und schaut, wie schnell ihr die Rätsel lösen könnt.",
         "budget": "€€"
       },
@@ -188,11 +189,11 @@
       },
       {
         "heading": "Pflanzentisch",
-        "text": "Geht gemeinsam in den Baumarkt und besorgt euch Materialien um im Anschluss einen kleinen Pflanzentisch zu bauen.",
+        "text": "Geht gemeinsam in den Baumarkt und besorgt euch Materialien, um im Anschluss einen kleinen Pflanzentisch zu bauen.",
         "budget": "€€"
       },
       {
-        "heading": "Pläztchen backen",
+        "heading": "Plätzchen backen",
         "text": "Backt gemeinsam die Plätzchen eurer Wahl.",
         "budget": "€"
       },
@@ -208,7 +209,7 @@
       },
       {
         "heading": "Fotos machen",
-        "text": "Geht in das nächste Fotostudio und macht neue Passbilder. Die Fotos kommen dann in das Portmonee des jeweils anderen.",
+        "text": "Geht in das nächste Fotostudio und macht neue Passbilder. Die Fotos kommen dann in das Portemonnaie des jeweils anderen.",
         "budget": "€"
       },
       {
@@ -232,7 +233,7 @@
         "budget": "€"
       },
       {
-        "heading": "Schlittschuh farhren",
+        "heading": "Schlittschuh fahren",
         "text": "Fahrt in eine Eishalle oder zu einer Eisfläche und traut euch mit Schlittschuhen aufs Eis.",
         "budget": "€€"
       },
@@ -627,13 +628,13 @@
         "budget": "€€"
       },
       {
-        "heading": "Rap song",
+        "heading": "Rap Song",
         "text": "Schreibt zusammen einen Rap Song und nehmt ihn im Anschluss über eine App eurer Wahl mit einem Beat auf.",
         "budget": "€"
       },
       {
         "heading": "Seifenblasen",
-        "text": "Mache mit deinem Date XXL Seifenblasen und filmt eure Kunst mit. Bei Bedarf, schaue dir vorher ein Tutorial dazu an.",
+        "text": "Mache mit deinem Date XXL Seifenblasen und filmt eure Kunst mit. Bei Bedarf schaue dir vorher ein Tutorial dazu an.",
         "budget": "€"
       },
       {
@@ -669,8 +670,8 @@
       "favoritePageText": "Your favorite date ideas",
       "noFavoritText": "You don't have favorites yet",
 
-      "deleteText": "Click to delete",
-      "viewText": "View Idea",
+      "doubleTapText": "Double tap to delete",
+      "deleteText": "Double tap star to delete",
       "button": "View"
     },
     "sharePage": {
@@ -1322,8 +1323,8 @@
       "favoritePageText": "Vos idées de rendez-vous préférées",
       "noFavoritText": "Vous n'avez pas encore de favoris",
 
-      "deleteText": "Cliquez pour supprimer",
-      "viewText": "Afficher l'idée",
+      "deleteText": "Double cliquez sur l'étoile pour supprimer",
+      "doubleTapText": "Double-cliquez pour supprimer",
       "button": "Afficher"
     },
     "sharePage": {
@@ -1354,7 +1355,7 @@
       },
       {
         "heading": "Champ de fraises",
-        "text": "Allez dans un champ de fraises. ramassez des fraises ensemble, apprenez à vous connaître et transformez ensuite vos fraises ensemble",
+        "text": "Allez dans un champ de fraises. Ramassez des fraises ensemble, apprenez à vous connaître et transformez ensuite vos fraises ensemble",
         "budget": "€€"
       },
       {
@@ -1408,8 +1409,8 @@
         "budget": "€"
       },
       {
-        "heading": "Stand-Up Comedy",
-        "text": "Assistez ensemble à un spectacle de stand-up comedy et testez si vous pouvez rire ensemble",
+        "heading": "Stand-Up Comédie",
+        "text": "Assistez ensemble à un spectacle de stand-up comédie et testez si vous pouvez rire ensemble",
         "budget": "€€"
       },
       {
@@ -1679,7 +1680,7 @@
         "budget": "€"
       },
       {
-        "heading": "Geocaching",
+        "heading": "Géocaching",
         "text": "Va faire du géocaching avec ton rendez-vous",
         "budget": "€"
       },
@@ -1977,8 +1978,10 @@
       "favoritePageText": "Tus ideas para citas favoritas",
 
       "noFavoritText": "Aún no tienes ningún favorito",
-      "deleteText": "Haga clic para eliminar",
-      "viewText": "Ver idea",
+
+      "deleteText": "Haga doble clic en la estrella para eliminar",
+
+      "doubleTapText": "Doble clic para eliminar",
       "button": "Ver"
     },
     "sharePage": {

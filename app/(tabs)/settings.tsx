@@ -3,9 +3,9 @@ import React from "react";
 import {useSnapshot} from "valtio";
 
 import {selected} from "../globalState";
-import SelectListComponent from "../components/SelectList";
-import Colors from "../constants/Colors";
+import SelectListComponent from "../components/settingsPage/SelectList";
 import data from "../data.json";
+import Colors from "../constants/Colors";
 function Settings() {
   const snap: any = useSnapshot(selected);
   return (
@@ -23,10 +23,11 @@ const styles = StyleSheet.create({
     flex: 1,
     width: "100%",
     paddingHorizontal: 20,
+    backgroundColor: Colors.white,
   },
   title: {
     fontSize: 22,
-    fontFamily: "Quick sand",
+    fontFamily: "Quick-Sand",
     textAlign: "center",
     textDecorationLine: "underline",
   },

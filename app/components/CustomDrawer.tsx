@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 23,
     textAlign: "center",
-    fontFamily: "Quick sand",
+    fontFamily: "Quick-Sand",
   },
   itemContainer: {
     paddingTop: 0,

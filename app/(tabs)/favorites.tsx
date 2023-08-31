@@ -3,10 +3,11 @@ import React from "react";
 import {selected} from "../globalState";
 import {useSnapshot} from "valtio";
 import data from "../data.json";
-import FavoriteButton from "../components/FavoriteButton";
+import FavoriteButton from "../components/favoritePage/FavoriteButton";
 import {TouchableOpacity} from "react-native-gesture-handler";
 import {Link} from "expo-router";
 import Colors from "../constants/Colors";
+import {LinearGradient} from "expo-linear-gradient";
 const Favorites = () => {
   const snap: any = useSnapshot(selected);
 
@@ -22,16 +23,17 @@ const Favorites = () => {
         </Text>
         <View style={styles.helpContainer}>
           {snap.favorites.length !== 0 && (
-            <>
-              <Text style={styles.helpContainer.text}>{texts.deleteText}</Text>
-              <Text style={styles.helpContainer.text}>{texts.viewText}</Text>
-            </>
+            <Text style={styles.helpText}>{texts.deleteText}</Text>
           )}
         </View>
         {snap.favorites.map((item: number, index: any) => {
           return (
             <View key={index}>
-              <View style={styles.itemContainer}>
+              <LinearGradient
+                start={{x: 0.1, y: 0.1}}
+                style={styles.itemContainer}
+                colors={["#AA49A1", "#00DFAE"]}
+              >
                 <View style={{marginLeft: 10}}>
                   <FavoriteButton tapType="double" currentIdea={item} />
                 </View>
@@ -52,7 +54,7 @@ const Favorites = () => {
                     {texts.button}
                   </Link>
                 </TouchableOpacity>
-              </View>
+              </LinearGradient>
             </View>
           );
         })}
@@ -66,10 +68,11 @@ export default Favorites;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: Colors.white,
   },
   title: {
     fontSize: 25,
-    fontFamily: "Quick sand",
+    fontFamily: "Quick-Sand",
     textAlign: "center",
     textDecorationLine: "underline",
     margin: 10,
@@ -77,12 +80,12 @@ const styles = StyleSheet.create({
   helpContainer: {
     flexDirection: "row",
     paddingHorizontal: 10,
-    justifyContent: "space-between",
-    text: {
-      fontFamily: "Quick sand",
-      fontSize: 16,
-      // textDecorationLine: "underline",
-    },
+    justifyContent: "center",
+  },
+  helpText: {
+    fontFamily: "Quick-Sand-Regular",
+    fontSize: 16,
+    color: Colors.deleteRed,
   },
   itemContainer: {
     flexDirection: "row",
@@ -93,21 +96,25 @@ const styles = StyleSheet.create({
     marginRight: "auto",
     marginTop: 10,
     paddingRight: 5,
+
+    borderRadius: 4,
   },
   item: {
+    maxWidth: 200,
     fontSize: 21,
-    fontFamily: "Quick sand",
+    fontFamily: "Quick-Sand-Regular",
+    color: "white",
   },
   buttonContainer: {
-    backgroundColor: Colors.viewButton,
+    backgroundColor: Colors.darkPurple,
     borderRadius: 10,
   },
   buttonText: {
-    color: "white",
+    color: Colors.white,
     fontSize: 20,
     paddingHorizontal: 12,
     paddingVertical: 7,
     textAlign: "center",
-    fontFamily: "Quick sand",
+    fontFamily: "Quick-Sand-Regular",
   },
 });

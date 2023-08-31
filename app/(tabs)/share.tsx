@@ -2,20 +2,15 @@ import {
   StyleSheet,
   Text,
   View,
-  TextInput,
   ScrollView,
   TouchableOpacity,
-  Keyboard,
+  ActivityIndicator,
   Image,
 } from "react-native";
+import {LinearGradient} from "expo-linear-gradient";
 
-import {BlurView} from "expo-blur";
-
-import {SelectList} from "react-native-dropdown-select-list";
 import React, {useState} from "react";
-import {AntDesign, MaterialIcons} from "@expo/vector-icons";
 import {useSnapshot} from "valtio";
-
 import {selected} from "../globalState";
 import data from "../data.json";
 import Colors from "../constants/Colors";
@@ -24,31 +19,23 @@ import * as Print from "expo-print";
 import * as Sharing from "expo-sharing";
 import * as FileSystem from "expo-file-system";
 import * as ImagePicker from "expo-image-picker";
-import {useIsFocused} from "@react-navigation/native";
 
 import {Asset} from "expo-asset";
 import {manipulateAsync} from "expo-image-manipulator";
+import SelectListComponent from "../components/sharePage/SelectListComponent";
+import TextInputComonent from "../components/sharePage/TextInputComonent";
+import GeneratePdfButton from "../components/sharePage/GeneratePdfButton";
 
 const SharePage = () => {
   const [selectedOption, setSelectedOption] = useState<number>();
   const [text, setText] = useState("");
   const [imageUri, setImage] = useState<null | string>(null);
-  const disabled = !text || !selectedOption || !imageUri;
-  const isFocused = useIsFocused();
+  const [showLoadingIcon, setShowLoadingIcon] = useState(false);
 
+  const checkArr: boolean[] = [!selectedOption, !text, !imageUri];
+  const disabled = checkArr.every((item) => item === false);
   const snap: any = useSnapshot(selected);
-
   const sharePageTexts = data[snap.lang].sharePage;
-
-  const selectListData = snap.favorites
-    .map((item: number) => {
-      return {
-        value: data[snap.lang].dateIdeasTexts[item].heading,
-        key: item + 1,
-        disabled: false,
-      };
-    })
-    .sort();
 
   async function generateHtml() {
     if (!imageUri || !selectedOption) return;
@@ -99,8 +86,8 @@ const SharePage = () => {
       }
       body {
         font-family: "Quicksand", sans-serif;
-        background-color: ${Colors.mint};
         
+     background-color: ${Colors.mint};
       }
 
       h1 {
@@ -146,7 +133,7 @@ const SharePage = () => {
         background-color: color-mix(in oklab,  ${Colors.mint}, black 10%);
       }
       .image-container > img {
-        border-radius: 1rem;
+        border-radius: 0.5rem;
        
       }
       /* svgs */
@@ -566,89 +553,39 @@ const SharePage = () => {
           <Text style={styles.headingText}>
             {sharePageTexts.dropdownHeaderText}
           </Text>
-          <SelectList
-            data={selectListData}
-            save="key"
-            searchPlaceholder={sharePageTexts.dropdownSearchPlaceholderText}
-            placeholder={sharePageTexts.dropdownPlaceholderText}
-            setSelected={(val: number) => {
-              setSelectedOption(val);
-            }}
-            notFoundText={data[snap.lang].favoritePage.noFavoritText}
-            boxStyles={{width: 350}}
-            inputStyles={{fontFamily: "Quick sand"}}
-            dropdownTextStyles={{
-              fontFamily: "Quick sand",
-            }}
-            dropdownStyles={{
-              position: "absolute",
-              width: 350,
-              backgroundColor: "#f2f2f2",
-              zIndex: 10,
-              top: 50,
-            }}
-            closeicon={<AntDesign name="close" size={25} />}
-            arrowicon={<MaterialIcons name="keyboard-arrow-down" size={25} />}
-            dropdownShown={!isFocused}
-          />
+
+          <SelectListComponent setSelectedVal={setSelectedOption} />
         </View>
 
-        <View style={{marginTop: 20, width: "85%"}}>
-          <Text style={styles.headingText}>
-            {sharePageTexts.textfieldHeaderText}
-          </Text>
-          <TextInput
-            style={styles.textArea}
-            multiline
-            numberOfLines={10} // Du kannst die Anzahl der sichtbaren Zeilen anpassen
-            placeholder={sharePageTexts.textfieldPlaceholder}
-            onSubmitEditing={Keyboard.dismiss}
-            blurOnSubmit={true}
-            value={text}
-            onChangeText={(val: string) => {
-              setText(val);
-            }}
-            textAlignVertical="top"
-            underlineColorAndroid="transparent" // Entfernt die Unterstreichung auf Android
-            selectionColor="#007BFF" // Farbe des ausgewählten Texts und Cursors
-          />
-        </View>
+        <TextInputComonent text={text} setText={setText} />
 
-        <TouchableOpacity
-          onPress={pickImage}
-          style={{
-            marginTop: 20,
-            backgroundColor: Colors.lightBlue,
-            padding: 10,
-            borderRadius: 10,
-          }}
-        >
-          <Text style={{fontFamily: "Quick sand"}}>
-            {sharePageTexts.imageButton}
-          </Text>
+        <TouchableOpacity onPress={pickImage} style={styles.button}>
+          <Text style={styles.buttonText}>{sharePageTexts.imageButton}</Text>
         </TouchableOpacity>
-        <BlurView intensity={disabled ? 10 : 0} tint="light">
-          <TouchableOpacity
-            onPress={() => generatePdf()}
-            disabled={disabled}
-            style={[
-              styles.shareButton,
-              disabled ? {backgroundColor: Colors.lightGray, opacity: 0.4} : {},
-            ]}
-          >
-            <Text
-              style={{
-                textAlign: "center",
-                fontFamily: "Quick sand",
-                fontSize: 15,
-              }}
-            >
-              {sharePageTexts.PdfButton}
-            </Text>
-          </TouchableOpacity>
-        </BlurView>
 
         {imageUri && <Image source={{uri: imageUri}} style={styles.image} />}
+
+        <GeneratePdfButton
+          onPress={async () => {
+            setShowLoadingIcon(true);
+            await generatePdf();
+            setShowLoadingIcon(false);
+            setText("");
+            setTimeout(() => {
+              setImage(null);
+            }, 1000);
+          }}
+          disabled={!disabled}
+        />
+
+        {showLoadingIcon && (
+          <ActivityIndicator
+            style={styles.loading}
+            size={70}
+            color={"blue"}
+            animating={true}
+          />
+        )}
       </View>
     </ScrollView>
   );
@@ -659,32 +596,37 @@ export default SharePage;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: Colors.white,
   },
   headingText: {
     textAlign: "center",
-    fontFamily: "Quick sand",
-    fontSize: 20,
+    fontFamily: "Quick-Sand",
+    fontSize: 23,
     paddingVertical: 5,
   },
-  textArea: {
-    height: 300,
-    borderColor: "#000",
-    borderWidth: 1,
+
+  button: {
     padding: 10,
-    fontSize: 16,
-    borderRadius: 10,
-  },
-  shareButton: {
-    padding: 10,
-    backgroundColor: Colors.lightBlue,
+    backgroundColor: "#586BC1",
     marginTop: 20,
-    borderRadius: 10,
-    width: 200,
+    borderRadius: 7,
+    borderWidth: 1,
+  },
+  buttonText: {
+    fontFamily: "Quick-Sand-Medium",
+    fontSize: 17,
+    color: "white",
   },
   image: {
     marginTop: 10,
-    width: 200,
-    height: 150,
+    width: 250,
+    aspectRatio: "4/3",
     borderRadius: 10,
+  },
+  loading: {
+    position: "absolute",
+    left: "50%",
+    top: "40%",
+    transform: [{translateX: -35}],
   },
 });

@@ -1,5 +1,4 @@
 import React from "react";
-import {Redirect} from "expo-router";
 import {useRouter, useFocusEffect} from "expo-router";
 const Index = () => {
   const router = useRouter();

@@ -1,9 +1,10 @@
 import {TouchableOpacity, Text, View, StyleSheet, Animated} from "react-native";
 import React, {useState, useEffect} from "react";
 import {AntDesign} from "@expo/vector-icons";
-import {selected, updateGlobalStateData} from "../globalState";
+import {selected, updateGlobalStateData} from "../../globalState";
 import {useSnapshot} from "valtio";
-import Colors from "../constants/Colors";
+import Colors from "../../constants/Colors";
+import data from "../../data.json";
 type Props = {
   currentIdea: number;
   tapType: "single" | "double";
@@ -11,7 +12,7 @@ type Props = {
 };
 
 const FavoriteButton = (props: Props) => {
-  const snap = useSnapshot(selected);
+  const snap: any = useSnapshot(selected);
   const {currentIdea} = props;
   const starBool = snap.favorites.includes(currentIdea);
   const [starFilled, setStarFilled] = useState<Boolean>(starBool);
@@ -26,7 +27,7 @@ const FavoriteButton = (props: Props) => {
       selected.favorites = [...snap.favorites, props.currentIdea];
     } else {
       selected.favorites = snap.favorites.filter(
-        (item) => item !== props.currentIdea,
+        (item: number) => item !== props.currentIdea,
       );
     }
 
@@ -37,16 +38,19 @@ const FavoriteButton = (props: Props) => {
     return (
       <TouchableOpacity
         accessibilityHint="tap to add to favorites"
-        style={{paddingHorizontal: 15, paddingTop: 15}}
+        style={styles.favoriteButton}
         onPress={() => {
           handlePress();
         }}
       >
         <AntDesign
           name={starFilled ? "star" : "staro"}
-          color={Colors.iconStar}
+          color={Colors.darkYellow}
           size={33}
         />
+        <Text style={{fontSize: 20, fontFamily: "Quick-Sand", color: "black"}}>
+          {data[snap.lang].cardPage.favoriteIconText}
+        </Text>
       </TouchableOpacity>
     );
   }
@@ -62,7 +66,7 @@ const FavoriteButton = (props: Props) => {
 
       if (currentTime - lastPress <= doublePressDelay) {
         selected.favorites = snap.favorites.filter(
-          (item) => item !== props.currentIdea,
+          (item: number) => item !== props.currentIdea,
         );
 
         updateGlobalStateData(selected);
@@ -84,15 +88,15 @@ const FavoriteButton = (props: Props) => {
     return (
       <TouchableOpacity
         accessibilityHint="double tap to delete from favorites"
-        style={{padding: 15}}
+        style={{paddingVertical: 15, paddingRight: 15}}
         onPress={() => handleDoublePress()}
       >
-        <AntDesign name={"star"} color={Colors.iconStar} size={33} />
+        <AntDesign name={"star"} color={Colors.darkYellow} size={33} />
         {showTextBox && (
           <Animated.View
             style={[styles.textBoxContainer, {opacity: textBoxOpacity}]}
           >
-            <Text>Double Tap to delete</Text>
+            <Text>{data[snap.lang].favoritePage.doubleTapText}</Text>
           </Animated.View>
         )}
       </TouchableOpacity>
@@ -115,6 +119,9 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 5,
     zIndex: 10,
+  },
+  favoriteButton: {
+    alignItems: "center",
   },
 });
 export default FavoriteButton;

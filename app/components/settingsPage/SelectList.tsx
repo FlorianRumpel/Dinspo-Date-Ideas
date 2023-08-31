@@ -1,10 +1,11 @@
 import {SelectList} from "react-native-dropdown-select-list";
-import AsyncStorage from "@react-native-async-storage/async-storage";
-import {StyleSheet} from "react-native";
-import React, {useEffect} from "react";
-import {useSnapshot} from "valtio";
 
-import {selected, updateGlobalStateData} from "../globalState";
+import {StyleSheet} from "react-native";
+import React from "react";
+import {useSnapshot} from "valtio";
+import {AntDesign, MaterialIcons} from "@expo/vector-icons";
+
+import {selected, updateGlobalStateData} from "../../globalState";
 function SelectListComponent() {
   const snap: any = useSnapshot(selected);
 
@@ -25,6 +26,7 @@ function SelectListComponent() {
 
   return (
     <SelectList
+      fontFamily="Quick-Sand"
       searchPlaceholder="Search"
       data={languages}
       save="key"
@@ -33,6 +35,11 @@ function SelectListComponent() {
       boxStyles={styles.boxStyles}
       dropdownStyles={styles.dropDownStyles}
       dropdownItemStyles={styles.singleItemStyles}
+      closeicon={<AntDesign name="close" color={"grey"} size={25} />}
+      arrowicon={
+        <MaterialIcons name="keyboard-arrow-down" color={"grey"} size={25} />
+      }
+      searchicon={<MaterialIcons name="search" color={"grey"} size={25} />}
     />
   );
 }

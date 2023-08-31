@@ -1,7 +1,7 @@
 import {useSnapshot} from "valtio";
-import {selected} from "../globalState";
-import Colors from "../constants/Colors";
-import data from "../data.json";
+import {selected} from "../../globalState";
+import Colors from "../../constants/Colors";
+import data from "../../data.json";
 import {StyleSheet, Text, View, TouchableOpacity} from "react-native";
 import React from "react";
 
@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
     color: Colors.white,
     textAlign: "center",
     letterSpacing: 1,
+    fontFamily: "Quick-Sand-Medium",
   },
   buttonContainer: {
     width: "90%",
