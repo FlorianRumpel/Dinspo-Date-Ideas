@@ -27,9 +27,9 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 22,
-    fontFamily: "Quick-Sand",
+    fontFamily: "Quick-Sand-Regular",
     textAlign: "center",
-    textDecorationLine: "underline",
+    marginTop: 10,
   },
 });
 

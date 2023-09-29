@@ -13,6 +13,7 @@ import Colors from "../constants/Colors";
 import data from "../data.json";
 import GenerateButton from "../components/cardPage/GenerateButton";
 import FavoriteButton from "../components/favoritePage/FavoriteButton";
+import {SafeAreaView} from "react-native-safe-area-context";
 
 export default function Card() {
   const snap: any = useSnapshot(selected);
@@ -119,10 +120,11 @@ const styles = StyleSheet.create({
     position: "relative",
   },
   heading: {
-    fontFamily: "Quick-Sand",
+    fontFamily: "Quick-Sand-Regular",
     fontSize: 24,
     textTransform: "capitalize",
     textAlign: "center",
+    marginTop: 5,
   },
   textContainer: {
     marginTop: 20,
@@ -156,21 +158,5 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     marginTop: "auto",
-  },
-
-  buttonContainer: {
-    width: "90%",
-    marginTop: 20,
-    backgroundColor: Colors.lightBlue,
-    padding: 10,
-    borderRadius: 7,
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    shadowOpacity: 0.3,
-    shadowRadius: 6,
-    elevation: 5,
   },
 });

@@ -11,7 +11,7 @@
     },
     "favoritePage": {
       "favoriteDrawerText": "Deine Favoriten",
-      "favoritePageText": "Deine Lieblings Date Ideen",
+      "favoritePageText": "Deine Lieblings-Ideen",
       "noFavoritText": "Du hast noch keine Favoriten",
 
       "deleteText": "Stern doppelt klicken zum Löschen",
@@ -31,11 +31,32 @@
       "textfieldPlaceholder": "Schreibe einen Text...",
 
       "imageButton": "Bild wählen",
-      "PdfButton": "Als PDF teilen"
+      "PdfButton": "Als PDF teilen",
+      "saveButton": "Zu Lieblings Pdfs speichern",
+
+      "modalCloseText": "Schließen",
+      "templateButton": "Template wählen",
+      "templateText1": "Türkis mit Herzen",
+      "templateText2": "Türkis",
+      "templateText3": "Weiß",
+      "templateText4": "Weiß mit Herzen"
+    },
+    "pdfsPage": {
+      "pdfsDrawerText": "Deine lieblings Pdfs",
+      "titleText": "Hier findest du deine lieblings Pdfs",
+      "deleteText": "Löschen"
+    },
+    "submitPage": {
+      "submitDrawerText": "Dinspo einreichen",
+      "titleText1": "Gib einen Titel ein",
+      "placeholderText1": "Max 20 min 3 zeichen",
+      "titleText2": "Gib einen Text ein",
+      "placeholderText2": "Max 250 min 40 zeichen",
+      "characterText": "zeichen",
+      "submitText": "Idee einreichen"
     },
 
     "drawerNavText": "Navigation",
-
     "dateIdeasTexts": [
       {
         "heading": "Malen (1)",
@@ -388,7 +409,7 @@
         "budget": "€"
       },
       {
-        "heading": "Eigen Seife",
+        "heading": "Eigene Seife",
         "text": "Besorge ein Set für die Erstellung von Seife und entwickelt zusammen das perfekte Produkt.",
         "budget": "€"
       },
@@ -667,7 +688,7 @@
     },
     "favoritePage": {
       "favoriteDrawerText": "Your Favorites",
-      "favoritePageText": "Your favorite date ideas",
+      "favoritePageText": "Your favorite ideas",
       "noFavoritText": "You don't have favorites yet",
 
       "doubleTapText": "Double tap to delete",
@@ -686,8 +707,32 @@
       "textfieldPlaceholder": "Write a text...",
 
       "imageButton": "Choose image",
-      "PdfButton": "Share as PDF"
+      "PdfButton": "Share as PDF",
+      "saveButton": "Save to favorite pdfs",
+
+      "modalCloseText": "Close",
+      "templateButton": "Choose template",
+
+      "templateText1": "Turquoise with hearts",
+      "templateText2": "Turquoise",
+      "templateText3": "White",
+      "templateText4": "White with hearts"
     },
+    "pdfsPage": {
+      "pdfsDrawerText": "Your favorite pdfs",
+      "titleText": "Here you will find your favorite PDFs",
+      "deleteText": "Delete"
+    },
+    "submitPage": {
+      "submitDrawerText": "Submit Dinspo",
+      "titleText1": "Enter a title",
+      "placeholderText1": "Max 20 min 3 characters",
+      "titleText2": "Enter a text",
+      "placeholderText2": "Max 250 min 40 characters",
+      "characterText": "characters",
+      "submitText": "Submit idea"
+    },
+
     "drawerNavText": "Navigation",
     "dateIdeasTexts": [
       {
@@ -1310,7 +1355,7 @@
 
   {
     "cardPage": {
-      "dateIdeaDrawerText": "Votre idée de date",
+      "dateIdeaDrawerText": "Soumettre Dinspo",
       "generateButtonText": "Générer une nouvelle idée de date",
       "favoriteIconText": "Favori"
     },
@@ -1339,8 +1384,34 @@
       "textfieldPlaceholder": "Écrire un texte...",
 
       "imageButton": "Choisir une image",
-      "PdfButton": "Partager au format PDF"
+      "PdfButton": "Partager au format PDF",
+      "saveButton": "Enregistrer dans les PDF favoris",
+
+      "modalCloseText": "Fermer",
+
+      "templateButton": "Sélectionner un modèle",
+      "templateText1": "Turquoise avec des coeurs",
+      "templateText2": "Turquoise",
+      "templateText3": "Blanc",
+      "templateText4": "Blanc avec des coeurs"
     },
+
+    "pdfsPage": {
+      "pdfsDrawerText": "Vos fichiers PDF préférés",
+      "titleText": "Vous trouverez ici vos PDF préférés",
+      "deleteText": "Supprimer"
+    },
+
+    "submitPage": {
+      "submitDrawerText": "Votre propre idée de date",
+      "titleText1": "Entrez un titre",
+      "placeholderText1": "Max 20 min 3 caractères",
+      "titleText2": "Entrez un texte",
+      "placeholderText2": "Max 250 min 40 caractères",
+      "characterText": "caractères",
+      "submitText": "Soumettre une idée"
+    },
+
     "drawerNavText": "Navigation",
     "dateIdeasTexts": [
       {
@@ -1996,8 +2067,33 @@
       "textfieldPlaceholder": "Escribe un texto...",
 
       "imageButton": "Elegir imagen",
-      "PdfButton": "Compartir como PDF"
+      "PdfButton": "Compartir como PDF",
+      "saveButton": "Guardar en PDF favoritos",
+
+      "modalCloseText": "Cerrar",
+      "templateButton": "Seleccionar plantilla",
+      "templateText1": "Turquesa con corazones",
+      "templateText2": "Turquesa",
+      "templateText3": "Blanco",
+      "templateText4": "Blanco con corazones"
     },
+
+    "pdfsPage": {
+      "pdfsDrawerText": "Tus PDF favoritos",
+      "titleText": "Aquí encontrarás tus PDF favoritos",
+      "deleteText": "Eliminar"
+    },
+
+    "submitPage": {
+      "submitDrawerText": "Enviar Dinspo",
+      "titleText1": "Ingrese un título",
+      "placeholderText1": "Máximo 20 min 3 caracteres",
+      "titleText2": "Ingrese un texto",
+      "placeholderText2": "Máximo 250 min 40 caracteres",
+      "characterText": "carácters",
+      "submitText": "Enviar idea"
+    },
+
     "drawerNavText": "Navegación",
     "dateIdeasTexts": [
       {

@@ -43,7 +43,6 @@ const SelectListComponent = (props: Props) => {
       dropdownTextStyles={{
         fontFamily: "Quick-Sand",
       }}
-      dropdownStyles={styles.dropDownStyles}
       closeicon={<AntDesign name="close" color={"grey"} size={25} />}
       arrowicon={
         <MaterialIcons name="keyboard-arrow-down" color={"grey"} size={25} />
@@ -61,8 +60,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     width: 350,
     backgroundColor: Colors.white,
-
-    zIndex: 10,
+    zIndex: 20,
     top: 50,
   },
 });

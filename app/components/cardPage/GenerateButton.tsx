@@ -1,12 +1,10 @@
-import {useSnapshot} from "valtio";
-import {selected} from "../../globalState";
 import Colors from "../../constants/Colors";
-import data from "../../data.json";
 import {StyleSheet, Text, View, TouchableOpacity} from "react-native";
 import React from "react";
 
+import {MaterialIcons} from "@expo/vector-icons";
+
 const GenerateButton = (props: any) => {
-  const snap: any = useSnapshot(selected);
   return (
     <TouchableOpacity
       accessibilityHint="tap to generate new date idea"
@@ -16,15 +14,7 @@ const GenerateButton = (props: any) => {
         props.disabled ? {backgroundColor: Colors.lightGray, opacity: 0.5} : {},
       ]}
     >
-      <View>
-        <Text
-          adjustsFontSizeToFit={true}
-          numberOfLines={2}
-          style={styles.buttonText}
-        >
-          {data[snap.lang].cardPage.generateButtonText}
-        </Text>
-      </View>
+      <MaterialIcons name="refresh" color={Colors.black} size={40} />
     </TouchableOpacity>
   );
 };
@@ -40,18 +30,21 @@ const styles = StyleSheet.create({
     fontFamily: "Quick-Sand-Medium",
   },
   buttonContainer: {
-    width: "90%",
     marginTop: 20,
-    backgroundColor: Colors.lightBlue,
-    padding: 10,
-    borderRadius: 7,
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    shadowOpacity: 0.3,
-    shadowRadius: 6,
-    elevation: 5,
+    height: 70,
+    width: 70,
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 400,
+
+    backgroundColor: "white",
+    // shadowColor: "#000",
+    // shadowOffset: {
+    //   width: 0,
+    //   height: 4,
+    // },
+    // shadowOpacity: 0.8,
+    // shadowRadius: 6,
+    // elevation: 5,
   },
 });

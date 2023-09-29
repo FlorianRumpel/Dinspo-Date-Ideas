@@ -44,13 +44,13 @@ const FavoriteButton = (props: Props) => {
         }}
       >
         <AntDesign
-          name={starFilled ? "star" : "staro"}
-          color={Colors.darkYellow}
+          name={starFilled ? "heart" : "hearto"}
+          color={Colors.pink}
           size={33}
         />
-        <Text style={{fontSize: 20, fontFamily: "Quick-Sand", color: "black"}}>
+        {/* <Text style={{fontSize: 20, fontFamily: "Quick-Sand", color: "black"}}>
           {data[snap.lang].cardPage.favoriteIconText}
-        </Text>
+        </Text> */}
       </TouchableOpacity>
     );
   }
@@ -71,6 +71,8 @@ const FavoriteButton = (props: Props) => {
 
         updateGlobalStateData(selected);
       } else {
+        textBoxOpacity.setValue(1);
+
         setShowTextBox(true);
         Animated.timing(textBoxOpacity, {
           toValue: 0,
@@ -91,7 +93,7 @@ const FavoriteButton = (props: Props) => {
         style={{paddingVertical: 15, paddingRight: 15}}
         onPress={() => handleDoublePress()}
       >
-        <AntDesign name={"star"} color={Colors.darkYellow} size={33} />
+        <AntDesign name={"heart"} color={Colors.pink} size={33} />
         {showTextBox && (
           <Animated.View
             style={[styles.textBoxContainer, {opacity: textBoxOpacity}]}

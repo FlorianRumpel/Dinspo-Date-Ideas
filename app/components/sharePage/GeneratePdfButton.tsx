@@ -3,6 +3,7 @@ import React from "react";
 import Colors from "../../constants/Colors";
 import {useSnapshot} from "valtio";
 import {selected} from "../../globalState";
+import {Entypo} from "@expo/vector-icons";
 import data from "../../data.json";
 type Props = {
   disabled: boolean;
@@ -23,9 +24,7 @@ const GeneratePdfButton = (props: Props) => {
         disabled ? {backgroundColor: Colors.lightGray, opacity: 0.2} : {},
       ]}
     >
-      <Text style={styles.buttonText}>
-        {data[snap.lang].sharePage.PdfButton}
-      </Text>
+      <Entypo name="export" size={40} />
     </TouchableOpacity>
   );
 };
@@ -35,12 +34,8 @@ export default GeneratePdfButton;
 const styles = StyleSheet.create({
   button: {
     padding: 10,
-    backgroundColor: Colors.lightBlue,
-    marginTop: 40,
+    backgroundColor: Colors.pink,
     borderRadius: 10,
-
-    width: "90%",
-    borderWidth: 1,
   },
   buttonText: {
     textAlign: "center",
