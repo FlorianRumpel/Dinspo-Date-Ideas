@@ -2,7 +2,7 @@
   "expo": {
     "name": "Dinspo: Date Ideas",
     "slug": "Dinspo-Date-Ideas",
-    "version": "1.0.4",
+    "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./app/assets/images/icon.png",
     "scheme": "myapp",
@@ -24,7 +24,7 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.vindhyavali.DinspoDateIdeas",
-      "versionCode": 4,
+      "versionCode": 1,
       "permissions": ["android.permission.RECORD_AUDIO"]
     },
     "web": {
