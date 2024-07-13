@@ -1,13 +1,18 @@
 import React, {useState, useEffect} from "react";
 import {StyleSheet, Text, View} from "react-native";
+//@ts-ignore
 import {hyphenated} from "hyphenated";
+//@ts-ignore
 import de from "hyphenated-de";
+//@ts-ignore
 import en from "hyphenated-en-us";
+//@ts-ignore
 import es from "hyphenated-es";
+//@ts-ignore
 import fr from "hyphenated-fr";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {useSnapshot} from "valtio";
-
+2;
 import {selected} from "../globalState";
 import Colors from "../constants/Colors";
 import data from "../data.json";

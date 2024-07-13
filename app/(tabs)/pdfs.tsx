@@ -27,17 +27,18 @@ const PdfsPage = () => {
 
   async function handlePress(id: number) {
     setShowLoadingIcon(true);
-
     const currentPdf = snap.pdfs.filter((pdf: any) => pdf.id === id)[0];
 
     const imageData = await imageUriToBase64(currentPdf.imagePath);
 
+    console.log(currentPdf.theme);
     const html = await generateHtml(
       imageData[0],
       imageData[1],
       currentPdf.dateIdea,
       currentPdf.text,
       currentPdf.language,
+      currentPdf.theme,
     );
 
     await generatePdf(html, currentPdf.dateIdea, currentPdf.language);

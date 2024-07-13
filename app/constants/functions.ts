@@ -3,6 +3,7 @@ import Colors from "../constants/Colors";
 
 import * as Print from "expo-print";
 import * as Sharing from "expo-sharing";
+
 import * as FileSystem from "expo-file-system";
 import {Alert} from "react-native";
 import {Asset} from "expo-asset";
@@ -92,9 +93,9 @@ const generateHtml = async (
         header {
         display: flex;
         justify-content: space-around;
-        
+    
         background-color:${
-          themeNumber === 3 || themeNumber === 4 ? "#5bd3bd" : "white"
+          themeNumber === 3 || themeNumber === 4 ? "#5bd3bd" : "transparent"
         };
       }
       h1 {
@@ -123,7 +124,7 @@ const generateHtml = async (
       .experience-text {
         width: 45ch;
         text-align: center;
-        
+        z-index: "10"
         line-height: 1.5;
         color: ${themeNumber === 3 || themeNumber === 4 ? "black" : "white"};
         border-radius: 1rem;
@@ -144,6 +145,7 @@ const generateHtml = async (
       }
 
       .image-container {
+      z-index: 10;
         ${
           themeNumber === 1 || themeNumber === 2
             ? " border: 1px solid black;"

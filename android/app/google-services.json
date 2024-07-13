@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "477972539535",
+    "firebase_url": "https://dinspo-4ea87-default-rtdb.firebaseio.com",
+    "project_id": "dinspo-4ea87",
+    "storage_bucket": "dinspo-4ea87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477972539535:android:24f7edf992fa266ed6e8fa",
+        "android_client_info": {
+          "package_name": "com.vindhyavali.DinspoDateIdeas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477972539535-csopr326fbajopcgpscuearte4pb304g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzfskCTDbfb59_lNqZl2W1N56ZYyzcaaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "477972539535-csopr326fbajopcgpscuearte4pb304g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

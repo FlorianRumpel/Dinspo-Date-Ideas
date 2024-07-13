@@ -1,8 +1,8 @@
 {
   "expo": {
     "name": "Dinspo: Date Ideas",
-    "slug": "Disnpo-Date-Ideas",
-    "version": "1.0.0",
+    "slug": "Dinspo-Date-Ideas",
+    "version": "1.0.4",
     "orientation": "portrait",
     "icon": "./app/assets/images/icon.png",
     "scheme": "myapp",
@@ -14,14 +14,18 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.vindhyavali.DinspoDateIdeas"
     },
     "android": {
+      "googleServicesFile": "./app/assets/google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./app/assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.vindhyavali.DisnpoDateIdeas"
+      "package": "com.vindhyavali.DinspoDateIdeas",
+      "versionCode": 4,
+      "permissions": ["android.permission.RECORD_AUDIO"]
     },
     "web": {
       "bundler": "metro",
@@ -45,7 +49,7 @@
         "origin": false
       },
       "eas": {
-        "projectId": "8ad1bbb5-cdc5-4395-86bf-afe1af4380bd"
+        "projectId": "18e366dd-fd3e-479a-9c9e-b502139951f1"
       }
     }
   }

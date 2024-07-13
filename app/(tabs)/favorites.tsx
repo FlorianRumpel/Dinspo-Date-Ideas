@@ -5,10 +5,10 @@ import {useSnapshot} from "valtio";
 import data from "../data.json";
 import FavoriteButton from "../components/favoritePage/FavoriteButton";
 import {TouchableOpacity} from "react-native-gesture-handler";
-import {Link, router} from "expo-router";
+import {Link} from "expo-router";
 import Colors from "../constants/Colors";
-import {LinearGradient} from "expo-linear-gradient";
-import {Entypo, MaterialIcons} from "@expo/vector-icons";
+
+import {MaterialIcons} from "@expo/vector-icons";
 const Favorites = () => {
   const snap: any = useSnapshot(selected);
   const texts = data[snap.lang].favoritePage;

@@ -13,7 +13,7 @@ const SubmitPage = () => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
 
-  const disabled = title.length < 1 || body.length < 1;
+  const disabled = title.length < 3 || body.length < 40;
   const snap: any = useSnapshot(selected);
   const submitPageText = data[snap.lang].submitPage;
 

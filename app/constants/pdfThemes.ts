@@ -248,7 +248,7 @@ export default {
   svgsStyle: ` .svgs svg {
         height: 4.5rem;
         position: absolute;
-        z-index: -1;
+        z-index: 5;
       }
 
       svg:nth-child(1) {

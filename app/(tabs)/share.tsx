@@ -79,11 +79,11 @@ const SharePage = () => {
 
     const pdfObject = {
       id: Crypto.randomUUID(),
-
       dateIdea: selectedOption,
       imagePath: imageUri,
       language: snap.lang,
       text: text,
+      theme: snap.theme,
     };
 
     selected.pdfs.push(pdfObject);

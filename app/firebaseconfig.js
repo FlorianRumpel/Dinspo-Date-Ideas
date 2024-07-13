@@ -1,5 +1,6 @@
 import firebase from "firebase/compat/app";
 import {getDatabase} from "firebase/database";
+import {getAnalytics, isSupported} from "firebase/analytics";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBom4P4lL0KRuJlgqRJNRgzZr3jq6fjyL8",
@@ -15,5 +16,6 @@ const firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const db = getDatabase();
+// isSupported(getAnalytics());
 
 export {firebase, db};

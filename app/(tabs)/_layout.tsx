@@ -20,7 +20,9 @@ import * as SplashScreen from "expo-splash-screen";
 import {useFonts} from "expo-font";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {useSnapshot} from "valtio";
-import {useNavigation} from "expo-router/src/useNavigation";
+
+//@ts-ignore
+import {useNavigation} from "expo-router";
 
 import Colors from "../constants/Colors";
 import CustomDrawer from "../components/CustomDrawer";
