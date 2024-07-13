@@ -8,6 +8,7 @@ node_modules/
 dist/
 web-build/
 
+
 # Native
 *.orig.*
 *.jks
@@ -39,3 +40,7 @@ yarn-error.*
 
 expo-env.d.ts
 # @end expo-cli
+
+# Ignore Expo credentials 
+credentials.json
+credentials/
