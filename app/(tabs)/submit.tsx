@@ -29,7 +29,7 @@ const SubmitPage = () => {
       return `${tag}.${monat}.${jahr}`;
     }
     const dateNow = date();
-    console.log(dateNow);
+
     set(ref(db, "posts/" + id), {
       title: title,
       body: body,

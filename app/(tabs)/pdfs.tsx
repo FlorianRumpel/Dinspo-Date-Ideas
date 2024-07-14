@@ -31,7 +31,6 @@ const PdfsPage = () => {
 
     const imageData = await imageUriToBase64(currentPdf.imagePath);
 
-    console.log(currentPdf.theme);
     const html = await generateHtml(
       imageData[0],
       imageData[1],

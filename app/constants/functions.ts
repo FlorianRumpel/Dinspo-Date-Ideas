@@ -9,8 +9,6 @@ import {Alert} from "react-native";
 import {Asset} from "expo-asset";
 import {manipulateAsync} from "expo-image-manipulator";
 import pdfThemes from "../constants/pdfThemes";
-import {useSnapshot} from "valtio";
-import {selected} from "../globalState";
 
 const imageUriToBase64 = async (uri: string) => {
   try {
@@ -41,15 +39,15 @@ const generateHtml = async (
   const dateIdea = dataIdea.text;
   const experienceText = data[lang].sharePage.pdfExperienceText;
 
-  let logo;
-  try {
-    const asset = Asset.fromModule(require("../assets/images/icon.png"));
-    logo = await manipulateAsync(asset.localUri ?? asset.uri, [], {
-      base64: true,
-    });
-  } catch (error) {
-    console.warn(error);
-  }
+  // let logo;
+  // try {
+  //   const asset = Asset.fromModule(require("../assets/images/icon.png"));
+  //   logo = await manipulateAsync(asset.localUri ?? asset.uri, [], {
+  //     base64: true,
+  //   });
+  // } catch (error) {
+  //   console.warn("somthing went wrong pleas try again");
+  // }
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -124,7 +122,7 @@ const generateHtml = async (
       .experience-text {
         width: 45ch;
         text-align: center;
-        z-index: "10"
+        z-index: 10;
         line-height: 1.5;
         color: ${themeNumber === 3 || themeNumber === 4 ? "black" : "white"};
         border-radius: 1rem;
@@ -171,8 +169,8 @@ const generateHtml = async (
     <div class="wrapper">
        <header>
         <img class="icon" src="data:image/png;base64,${
-          logo && logo.base64
-        }" alt="a logo" />
+          pdfThemes.iconImgBase64
+        }" alt="dinspo logo" />
       </header>
       <div class="texts">
         <div class="date-idea-text">
